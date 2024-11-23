@@ -1,0 +1,169 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sense-separacio {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.sense-separacio .col {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.sense-separacio [class*="col"] {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/** posem el pròxim codi perquè sino posem 12 columnes (que en posem menys en una fila)
+     * els elements HTML que haja després de la fila actual no ocupen l'espai 
+     *que falta de les columnes fins al final i que vagen en una altra fila */
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+/***
+    *Dividint el total de la pantalla entre 12.   Cada tros és una columna:
+    
+    *100 / 12 columnes = 8.33%
+    */
+/** si no diguem res ocupa el 100% */    
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.col-1 {
+  flex: 0 0 auto;
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+[class*="col"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/** apartat responsive */
+
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .row {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For tablets and */
+  .container {
+    width: 738px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    width: 739px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}

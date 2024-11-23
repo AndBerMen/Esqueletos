@@ -1,0 +1,211 @@
+/* 
+#222831 azul oscuro 
+#30475E azul claro
+#FF7000 naranja
+#ECECEC gris
+*/
+
+
+* {
+    color: #30475E;
+    font-family: "Noto Serif", serif;
+}
+
+/********** CLASES GENERALES ************/
+button{
+    cursor: pointer;
+}
+.text-blanc{
+    color: white;
+}
+
+.padding-izq-zero{
+    padding-left: 0;
+}
+
+.padding-zero{
+    padding: 0;
+}
+
+.padding-der-zer{
+    padding-right: 0;
+}
+
+.centrat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo-azul{
+    background-color: #222831;
+}
+
+/********** MENU LATERAL ************/
+#menu{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 16.6666666667%;
+    overflow-y: scroll;
+}
+
+#logo{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.separacio{
+    border-bottom: 1px solid white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+#menu > p > a,
+nav ul li a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    line-height: 1.5em;
+}
+
+
+nav ul li ul {
+    background-color: #30475E;
+    text-align: center;
+}
+
+nav ul li ul li{
+    border: 1px solid #222831;
+}
+
+nav ul li ul li a:hover {
+    background-color: #222831;
+}
+
+
+nav i{
+    color: white;
+    text-align: center;
+    width: 1.8em;
+    font-size: 1.2em;
+}
+
+#dropdown{
+    display: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+
+
+/********** PARTE CENTRAL ************/
+.col-10 > div > h2{
+    background-color: #FF7000;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    #logo{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 900px)
+{   
+    .container-fluid > .row {
+        flex-direction: column;
+      }
+   
+    .container-fluid > .row > .col-10 {
+        width: 100%;
+    }
+
+
+    /********** HEADER ************/
+    .container-fluid > .row > .col-2{
+        height: 4.2em;
+    }
+    #menu{
+        position: fixed;
+        right:0;
+        width: 100%;
+        display: flex;
+        bottom: auto;
+        align-items: center;
+        justify-content: space-between;
+        overflow:visible;
+    }
+    nav{
+        display: none;
+        top: 3.2em;
+    }
+
+    ul{
+        background-color: #222831;
+ 
+    }
+    .show{
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-height: calc(100vh-3.2em);
+        overflow: scroll;
+        animation: slideDown 0.4s ease-in-out;
+
+    }
+
+    #logo {
+        width: 5em;
+        border-bottom: none;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+
+    .separacio{
+        border-bottom: none;
+    }
+
+    #dropdown{
+        display: block;
+        margin-right: 2em;
+    }
+
+
+    .col-10 > div > h2{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+
+    /*********** DESPLAZAMIENTO DEL MENÚ ***********/
+    @keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+}
