@@ -87,13 +87,6 @@ nav ul li a {
     line-height: 1.5em;
 }
 
-#sesion,
-#sesion i {
-    margin-top: 0.1em;
-    background-color: #ececec;
-    color: #222831;
-}
-
 nav ul li ul {
     background-color: #30475E;
 }
@@ -121,6 +114,25 @@ nav i{
     font-size: 1.5em;
 }
 
+#sesion,
+#sesion i {
+    margin-top: 0.1em;
+    background-color: #ececec;
+    color: #222831;
+}
+
+#sesion:hover{
+    color: white;
+    background-color: #222831;
+    border: 1px solid #222831;
+    transition: 0.5s ease 0s;
+} 
+
+#sesion:hover i{
+    color: white;
+    background-color: #222831;
+    transition: 0.5s ease 0s;
+}
 
 
 /********** PARTE CENTRAL ************/
@@ -153,7 +165,6 @@ nav i{
         width: 100%;
     }
 
-
     /********** HEADER ************/
     .container-fluid > .row > .col-2{
         height: 4.2em;
@@ -168,6 +179,7 @@ nav i{
         justify-content: space-between;
         overflow:visible;
     }
+
     nav{
         display: none;
         top: 4.2em;
@@ -183,7 +195,7 @@ nav i{
         position: absolute;
         display: block;
         width: 100%;
-        max-height: calc(100vh - 3.2em);
+        max-height: calc(100vh - 4.2em);
         overflow: scroll;
         animation: slideDown 0.4s ease-in-out;
     }
@@ -201,20 +213,18 @@ nav i{
 
     #sesion{
         background-color: #ececec;
-        border: 1px solid white;
+        border: 1px solid #ececec;
     }
+
     #dropdown{
         display: block;
         margin-right: 2em;
     }
 
-
     .col-10 > div > h2{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-
-
     /*********** DESPLAZAMIENTO DEL MENÚ ***********/
     @keyframes slideDown {
     from {
