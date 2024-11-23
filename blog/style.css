@@ -9,15 +9,11 @@
 * {
     color: #30475E;
     font-family: "Noto Serif", serif;
-
 }
 
 /********** CLASES GENERALES ************/
 button{
     cursor: pointer;
-}
-.text-blanc{
-    color: white;
 }
 
 .padding-izq-zero{
@@ -32,7 +28,7 @@ button{
     padding-right: 0;
 }
 
-.margin-inf-zero{
+.padding-inf-zero{
     padding-bottom: 0;
 }
 
@@ -42,8 +38,8 @@ button{
     justify-content: center;
 }
 
-.fondo-azul{
-    background-color: #222831;
+.fondo-gris{
+    background-color: #ececec;
 }
 
 /********** MENU LATERAL ************/
@@ -62,36 +58,28 @@ button{
 }
 
 .separacio{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #30475E;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-
 nav ul li {
     list-style: none;
-}
-
-nav ul {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 nav ul li a {
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: white;
+    color: #30475E;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     line-height: 1.5em;
 }
 
-#sesion,
-#sesion i {
-    margin-top: 0.1em;
-    background-color: #ececec;
-    color: #222831;
+nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 nav ul li ul {
@@ -102,16 +90,21 @@ nav ul li ul li{
     border: 1px solid #222831;
 }
 
-nav ul li ul li a:hover {
+nav ul li a:hover {
+    color: white;
     background-color: #222831;
     transition: 0.5s ease 0s;
 }
 
+nav ul li a:hover i{
+    color:white;
+    transition: 0.5s ease 0s;
+}
 
 nav i{
-    color: white;
+    color: #30475E;
     text-align: center;
-    width: 1.8em;
+    width: 2.5em;
     font-size: 1.2em;
 }
 
@@ -121,11 +114,9 @@ nav i{
     font-size: 1.5em;
 }
 
-
-
 /********** PARTE CENTRAL ************/
 .col-10 > div > h2{
-    background-color: #FF7000;
+    background-color: #222831;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 1em;
@@ -142,7 +133,6 @@ nav i{
     }
 }
 
-
 @media only screen and (max-width: 900px)
 {   
     .container-fluid > .row {
@@ -152,14 +142,12 @@ nav i{
     .container-fluid > .row > .col-10 {
         width: 100%;
     }
-
-
     /********** HEADER ************/
     .container-fluid > .row > .col-2{
         height: 4.2em;
     }
+
     #menu{
-        position: fixed;
         right:0;
         width: 100%;
         display: flex;
@@ -175,11 +163,15 @@ nav i{
 
     nav ul{
         margin-top: 0em;
-        background-color: #222831;
+        background-color: #ececec;
+        border: 1px solid #30475E;
     }
-  
+
+    nav ul li{
+        border: 1px solid #30475E;
+    }
+
     .show{
-        border-top: 1px solid white;
         position: absolute;
         display: block;
         width: 100%;
@@ -199,10 +191,7 @@ nav i{
         border-bottom: none;
     }
 
-    #sesion{
-        background-color: #ececec;
-        border: 1px solid white;
-    }
+
     #dropdown{
         display: block;
         margin-right: 2em;
@@ -214,18 +203,17 @@ nav i{
         padding-bottom: 0.5em;
     }
 
-
     /*********** DESPLAZAMIENTO DEL MENÚ ***********/
     @keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-}
 
 }
