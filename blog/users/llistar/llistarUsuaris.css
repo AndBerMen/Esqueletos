@@ -5,6 +5,9 @@
     --gris: #ECECEC;
 }
 
+.botoTaronja a {
+    color: white;
+}
 
 .botoTaronja{
     margin-top: 1em;
@@ -14,8 +17,14 @@ table a{
     text-decoration: none;
 }
 
-table a:hover{
+table a:hover,
+table i:hover{
     color: var(--blauFosc);
+}
+
+#filtros,
+#usuarios > table{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .col-10 > div:nth-child(3){
@@ -24,7 +33,7 @@ table a:hover{
 }
 a{
     text-decoration: none;
-    color: white;
+    
 }
 
 #filtros{
