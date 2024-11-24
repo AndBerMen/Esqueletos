@@ -5,10 +5,9 @@
     --gris: #ECECEC;
 }
 
-* {
+body{
     color: #30475E;
     font-family: "Noto Serif", serif;
-
 }
 
 /********** CLASES GENERALES ************/
@@ -152,8 +151,143 @@ nav i{
     text-align: center;
 }
 
+/*PARTE DE LAS TABLAS/FORMULARIOS*/
+/*FILTROS*/
+.rowFiltres {
+    background-color: var(--gris);
+}
+  
+.padding-zero {
+    padding: 0;
+}
 
+.boxFiltre {
+    padding: 2em 4em 2em 4em;
+    display: flex;
+    flex-direction: column;
+}
 
+.boxFiltre label {
+    padding-bottom: 0.3em;
+}
+
+.boxFiltre input, .boxFiltre select {
+    padding: 0.5em 2em 0.5em 1em;
+    background-color: white;
+    border-radius: 0.2em;
+    border: 0em;
+}
+
+/*BOX TAULA*/
+.boxTaula {
+    padding: 3em 0 2em 0;
+}
+  
+.checkBoxth {
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    width: auto;
+}
+  
+.boxBtn {
+    padding-bottom: 0.8em;
+}
+  
+.boxBtn button {
+    background-color: var(--taronja);
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border-radius: 0.3em;
+    border: 0em;
+    color: white;
+}
+
+.boxBtn button:hover{
+    color: var(--negre);
+}
+  
+.boxBtn label {
+    padding: 0 0.5em 0 0.5em;
+}
+  
+.boxBtn select {
+    padding: 0.2em 2em 0.2em 0.5em;
+    border-radius: 0.2em;
+    border-color: black;
+}
+
+.divAccions{
+    display: inline-flex;
+    gap: 1.5em;
+    color: var(--blauClar);
+}
+
+.divAccions a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.divAccions i:hover{
+    color: var(--taronja);
+}
+
+/*TAULA*/
+.taulaGestio {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    border: 0.01px solid black;
+}
+
+.taulaGestio, th{
+    border-top: 0.01px solid black;
+    border-bottom: 0.01px solid black;
+
+}
+
+.taulaGestio img {
+    width: 1.3em;
+    cursor: pointer;
+}
+
+thead{
+    background-color:var(--gris);
+    border-bottom: 1px solid var(--blauClar);
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--gris);
+}
+
+td, th {
+    padding: 0.5em 3em 0.5em 3em;
+}
+
+.veureMes{
+    text-align: center;
+}
+
+.veureMes a{
+    text-decoration: none;
+    color: black;
+}
+
+.veureMes a:hover{
+    color: var(--taronja);
+}
+
+/*FORMULARIS (ALTA, MODIFICAR I VISUALITZAR)*/
+.formulari{
+    display: grid;
+    gap: 1em;    
+}
+
+.inputVisualitzar{
+    background-color: var(--gris);
+    padding: 0.3em 0.8em;
+    border-radius: 0.35em;
+    width: 100%;
+}
+
+/*MEDIAQUERY*/
 @media only screen and (max-width: 1100px) {
     #logo{
         width: 100%;
