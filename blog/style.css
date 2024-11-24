@@ -63,6 +63,7 @@ button{
     padding-bottom: 2em;
 }
 
+
 .separacio{
     border-bottom: 1px solid var(--blauClar);
     margin-left: 5%;
@@ -96,6 +97,7 @@ nav ul li a:hover {
     color: white;
     background-color: var(--blauFosc);
     transition: 0.5s ease 0s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 nav ul li a:hover i{
@@ -125,6 +127,11 @@ nav i{
     padding-bottom: 1em;
     color: white;
     text-align: center;
+}
+
+#menu,
+h2{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 
