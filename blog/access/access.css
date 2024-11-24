@@ -1,0 +1,64 @@
+/* 
+#222831 azul oscuro 
+#30475E azul claro
+#FF7000 naranja
+#ECECEC gris
+*/
+
+*{
+    color: #30475E;
+    font-family: "Noto Serif", serif;
+}
+
+#login {
+    margin: auto;
+    width: fit-content;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ececec;
+    border-radius: 18px;
+    padding: 3em 5em 3em 5em;
+
+}
+
+img{
+    width: 270px;
+}
+
+
+#email, 
+#pswd{
+    border: none;
+    border-bottom: 2px solid #30475E;
+    background-color: #ececec;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+form > p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+form{
+    padding-top: 2.5em;
+}
+
+.botoTaronja{
+    margin-right: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 460px) {
+    #login{
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 1em;
+    }
+}

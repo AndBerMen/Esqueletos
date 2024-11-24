@@ -4,10 +4,16 @@
 #FF7000 naranja
 #ECECEC gris
 */
+:root{
+    --blauFosc: #222831;
+    --blauClar: #30475E;
+    --taronja: #FF7000;
+    --gris: #ECECEC;
+}
 
 
 * {
-    color: #30475E;
+    color: var(--blauClar);
     font-family: "Noto Serif", serif;
 }
 
@@ -39,7 +45,7 @@ button{
 }
 
 .fondo-gris{
-    background-color: #ececec;
+    background-color: var(--gris);
 }
 
 /********** MENU LATERAL ************/
@@ -58,7 +64,7 @@ button{
 }
 
 .separacio{
-    border-bottom: 1px solid #30475E;
+    border-bottom: 1px solid var(--blauClar);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -71,7 +77,7 @@ nav ul li a {
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: #30475E;
+    color: var(--blauClar);
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     line-height: 1.5em;
@@ -83,16 +89,12 @@ nav ul{
 }
 
 nav ul li ul {
-    background-color: #30475E;
-}
-
-nav ul li ul li{
-    border: 1px solid #222831;
+    background-color: var(--blauClar);
 }
 
 nav ul li a:hover {
     color: white;
-    background-color: #222831;
+    background-color: var(--blauFosc);
     transition: 0.5s ease 0s;
 }
 
@@ -102,7 +104,7 @@ nav ul li a:hover i{
 }
 
 nav i{
-    color: #30475E;
+    color: var(--blauClar);
     text-align: center;
     width: 2.5em;
     font-size: 1.2em;
@@ -116,7 +118,7 @@ nav i{
 
 /********** PARTE CENTRAL ************/
 .col-10 > div > h2{
-    background-color: #222831;
+    background-color: var(--blauFosc);
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 1em;
@@ -124,7 +126,6 @@ nav i{
     color: white;
     text-align: center;
 }
-
 
 
 @media only screen and (max-width: 1100px) {
@@ -164,11 +165,11 @@ nav i{
     nav ul{
         margin-top: 0em;
         background-color: #ececec;
-        border: 1px solid #30475E;
+        border: 1px solid var(--blauClar);
     }
 
     nav ul li{
-        border: 1px solid #30475E;
+        border: 1px solid var(--blauClar);
     }
 
     .show{
