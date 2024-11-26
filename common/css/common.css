@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root{
     --blauFosc: #222831;
     --blauClar: #30475E;
@@ -106,7 +105,6 @@ nav ul li ul li a:hover {
     transition: 0.5s ease 0s;
 }
 
-
 nav i{
     color: white;
     text-align: center;
@@ -140,7 +138,6 @@ nav i{
     transition: 0.5s ease 0s;
 }
 
-
 /********** PARTE CENTRAL ************/
 .col-10 > div > h2{
     background-color: var(--taronja);
@@ -156,6 +153,7 @@ nav i{
 h2 {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+
 /*PARTE DE LAS TABLAS/FORMULARIOS*/
 /*FILTROS*/
 .rowFiltres {
@@ -200,11 +198,9 @@ h2 {
     margin-left: auto;
 }
 
-
 .filter-button:hover{
     color: var(--negre);
 }
-
 
 /*BOX TAULA*/
 .boxTaula {
@@ -258,7 +254,6 @@ h2 {
 }
 
 /*TAULA*/
-
 .taulaGestio {
     border-collapse: collapse;
     text-align: center;
@@ -343,7 +338,6 @@ td, th {
         width: 100%;
     }
 }
-
 
 @media only screen and (max-width: 900px)
 {   
