@@ -32,49 +32,49 @@
                             <li>
                                 <a><i class="fa-solid fa-warehouse"></i>Administració</a>
                                 <ul class="padding-izq-zero">
-                                    <li><a href="../../../administracio/usuaris/llistat/llistatUsuaris.html"><i
+                                    <li><a href="../../../../administracio/usuaris/llistat/llistatUsuaris.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Usuaris</a></li>
-                                    <li><a href="../../../administracio/rols/llistat/llistatUserProfile.html"><i
+                                    <li><a href="../../../../administracio/rols/llistat/llistatUserProfile.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Rols</a></li>
-                                    <li><a href="../../../administracio/estatsProvinciesCiutats/state/llistaEstat.html"><i
+                                    <li><a href="../../../../administracio/estatsProvinciesCiutats/state/llistaEstat.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Dades geogràfiques</a></li>
                                     <li><a
-                                            href="../../../administracio/transportistes/llistar/llistatTransportistes.html"><i
+                                            href="../../../../administracio/transportistes/llistar/llistatTransportistes.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Transportistes</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a><i class="fa-solid fa-file-invoice-dollar"></i>Enviament</a>
                                 <ul class="padding-izq-zero">
-                                    <li><a href="../../../enviament/clients/llistar/llistar.html"><i
+                                    <li><a href="../../../../enviament/clients/llistar/llistar.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Clients</a></li>
-                                    <li><a href="../../../enviament/ordesEnviament/llistat/llistatOrdre.html"><i
+                                    <li><a href="../../../../enviament/ordesEnviament/llistat/llistatOrdre.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Ordens d'enviament</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a><i class="fa-solid fa-boxes-stacked"></i>Recepció</a>
                                 <ul class="padding-izq-zero">
-                                    <li><a href="../../../recepcio/proveidors/proveidors.html"><i
+                                    <li><a href="../../../../recepcio/proveidors/proveidors.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Proveidors</a></li>
                                     <li><a href="../../../../recepcio/estatsOrdesRecepcio/estatsOrdesRecepcio.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Estats ordes de
                                             recepció</a></li>
-                                    <li><a href="../../../recepcio/productes/productes.html"><i
+                                    <li><a href="../../../../recepcio/productes/productes.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Productes</a></li>
-                                    <li><a href="../../../recepcio/lots/lots.html"><i
+                                    <li><a href="../../../../recepcio/lots/lots.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Lots</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a><i class="fa-solid fa-box-open"></i>Magatzem</a>
                                 <ul class="padding-izq-zero">
-                                    <li><a href="../../../magatzem/inventaris/inventaris.html"><i
+                                    <li><a href="../../../../magatzem/inventaris/inventaris.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Gestió del magatzem</a>
                                     </li>
-                                    <li><a href="../../../magatzem/inventaris/inventaris.html"><i
+                                    <li><a href="../../../../magatzem/inventaris/inventaris.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Inventaris</a></li>
-                                    <li><a href="../../../magatzem/incidents/incidencies.html"><i
+                                    <li><a href="../../../../magatzem/incidents/incidencies.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Incidències</a></li>
                                 </ul>
                             </li>
@@ -88,15 +88,28 @@
             </div>
             <div class="col-10 padding-zero">
                 <div>
-                    <h2>Tria</h2>
+                    <h2>Visualitzar Estat</h2>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="boxTaula">
-                                    <div class="boxBtn">
-                                        <a href="estatLinia/listar/listar.html" style="color: white;"><button id="botoLinia" type="button"> Estat Línia </button></a>
-                                        <a href="estatOrdre/listar/listar.html" style="color: white;"><button id="botoOrdre" type="button"> Estat Ordre </button></a>
-                                    </div>
+                                    <form class="formulari">
+                                        <div class="row">
+                                            <label for="name" class="col-3">ID Estat:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="id" readonly>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <label for="name" class="col-3">Nom:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="name" readonly>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <h5 id="missatgeError"></h5>
+                                    <a href="../listar/listar.html">Tornar</a>
                                 </div>
                             </div>
                         </div>
