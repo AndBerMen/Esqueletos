@@ -274,6 +274,20 @@ td, th {
     color: var(--taronja);
 }
 
+.boxBtn a {
+    text-decoration: none; 
+    color: inherit;       
+}
+
+.boxBtn a:visited, 
+.boxBtn a:hover, 
+.boxBtn a:focus, 
+.boxBtn a:active {
+    text-decoration: none; 
+    color: inherit;       
+}
+
+
 /*FORMULARIS (ALTA, MODIFICAR I VISUALITZAR)*/
 .formulari{
     display: grid;
