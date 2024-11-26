@@ -1,3 +1,176 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
+    <script src="../../../common/js/common.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../grid3.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="visualitzar.css">
+    <script src="visualitzar.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div id="menu" class="fondo-azul">
+                    <div class="centrat separacio">
+                        <img src="../../../img/logo_footer2.png" alt="Logo Stockflow" id="logo">
+                    </div>
+                    <nav class="fondo-azul">
+                        <ul id="opciones" class="padding-izq-zero">
+                            <li>
+                                <a><i class="fa-solid fa-warehouse"></i>Administració</a>
+                                <ul class="padding-izq-zero">
+                                    <li><a href="../../../administracio/usuaris/llistat/llistatUsuaris.html"><i class="fa-solid fa-circle-chevron-right"></i>Usuaris</a></li>
+                                    <li><a href="../../../administracio/rols/llistat/llistatUserProfile.html"><i class="fa-solid fa-circle-chevron-right"></i>Rols</a></li>
+                                    <li><a href="../../../administracio/estatsProvinciesCiutats/state/llistaEstat.html"><i class="fa-solid fa-circle-chevron-right"></i>Dades geogràfiques</a></li>
+                                    <li><a href="../../../administracio/transportistes/llistar/llistatTransportistes.html"><i class="fa-solid fa-circle-chevron-right"></i>Transportistes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><i class="fa-solid fa-file-invoice-dollar"></i>Enviament</a>
+                                <ul class="padding-izq-zero">
+                                    <li><a href="../../../enviament/clients/llistar/llistar.html"><i class="fa-solid fa-circle-chevron-right"></i>Clients</a></li>
+                                    <li><a href="../../../enviament/ordesEnviament/llistat/llistatOrdre.html"><i class="fa-solid fa-circle-chevron-right"></i>Ordens d'enviament</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><i class="fa-solid fa-boxes-stacked"></i>Recepció</a>
+                                <ul class="padding-izq-zero">
+                                    <li><a href="../../../recepcio/proveidors/proveidors.html"><i class="fa-solid fa-circle-chevron-right"></i>Proveidors</a></li>
+                                    <li><a href="../../../recepcio/estatsOrdesRecepcio/estatsOrdesRecepcio.html"><i class="fa-solid fa-circle-chevron-right"></i>Estats ordes de recepció</a></li>
+                                    <li><a href="../../../recepcio/productes/productes.html"><i class="fa-solid fa-circle-chevron-right"></i>Productes</a></li>
+                                    <li><a href="../../../recepcio/lots/lots.html"><i class="fa-solid fa-circle-chevron-right"></i>Lots</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a><i class="fa-solid fa-box-open"></i>Magatzem</a>
+                                <ul class="padding-izq-zero">
+                                    <li><a href="../../../magatzem/inventaris/inventaris.html"><i class="fa-solid fa-circle-chevron-right"></i>Gestió del magatzem</a></li>
+                                    <li><a href="../../../magatzem/inventaris/inventaris.html"><i class="fa-solid fa-circle-chevron-right"></i>Inventaris</a></li>
+                                    <li><a href="../../../magatzem/incidents/incidencies.html"><i class="fa-solid fa-circle-chevron-right"></i>Incidències</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" id="sesion"><i class="fa-solid fa-right-from-bracket"></i>Tancar sessió</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button id="dropdown" class="fondo-azul"><i class="fa-solid fa-bars text-blanc"></i></button>
+                </div>
+            </div>
+            <div class="col-10 padding-zero">
+                <div>
+                    <!----------------------------------------------->
+                    <!--- DEBEN MODIFICAR EL TÍTULO-->
+                     <!---------------------------------------------->
+                    <h2>Visualitzar clients</h2>
+                    <!----------------------------------------------->
+                    <!--- PUEDEN EMPEZAR AQUÍ --->
+                     <!----------------------------------------------->
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="boxTaula">
+                                    <form class="formulari">
+                                        <div class="row">
+                                            <label for="name" class="col-3">Nom/raó social:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="name" placeholder="Ernesto" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="row">
+                                            <label for="address" class="col-3">Domicili:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="address" placeholder="c/ ejemplo, 42" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="row">
+                                            <label for="nif" class="col-3">DNI/NIF:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="nif" placeholder="23947534H" disabled="true" pattern="^[a-zA-Z0-9]{1,10}$" required>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="row">
+                                            <label for="phone" class="col-3">Telèfon:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="phone" placeholder="654785453" disabled="true"  pattern="^\d{9,15}$" required>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="row">
+                                            <label for="email" class="col-3">Correu:</label>
+                                            <div class="col-9">
+                                                <input type="email" class="inputVisualitzar" id="email" placeholder="ejemplo@gmail.com" disabled="true"  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="row">
+                                            <label for="state_id" class="col-3">Selecciona el país:</label>
+                                            <div class="col-9">
+                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" disabled="true" required>
+                                                    <option value="">Selecciona un país</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- PARTE QUE SE BORRARÁ CUANDO SEA FUNCIONAL -->
+                                        <div class="row">
+                                            <label for="state_id" class="col-3">Selecciona la provincia:</label>
+                                            <div class="col-9">
+                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
+                                                    <option value="">Selecciona la provincia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label for="state_id" class="col-3">Selecciona la ciutat:</label>
+                                            <div class="col-9">
+                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
+                                                    <option value="">Selecciona la ciutat</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <label for="email" class="col-3">Codi postal:</label>
+                                            <div class="col-9">
+                                                <input type="email" class="inputVisualitzar" id="email" placeholder="34546" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a href="../llistar/llistar.html">Tornar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -154,4 +327,5 @@
         </div>
     </div>
 </body>
+>>>>>>> origin
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow - Visualitza Etiqueta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
+    <link rel="shortcut icon" href="img/favicon_4.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="visualitzaEtiqueta.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div id="menu" class="fondo-gris">
+                    <div class="centrat separacio">
+                        <img src="../../img/logo_header.png" alt="Logo Stockflow" id="logo">
+                    </div>
+                    <nav>
+                        <ul id="opciones" class="padding-izq-zero">
+                            <li>
+                                <a href="../../posts/llistat/llistarPosts.html"><i class="fa-regular fa-newspaper"></i>Posts</a>
+                            </li>
+                            <li>
+                                <a href="../../comments/llistat/llistarComentaris.html"><i class="fa-regular fa-message"></i>Comentarios</a> 
+                            </li>
+                            <li>
+                                <a href="../../tag/llistat/llistarEtiquetes.html"><i class="fa-solid fa-tag"></i>Etiquetas</a>
+                            </li>
+                            <li>
+                                <a href="../../users/llistar/llistarUsuaris.html"><i class="fa-solid fa-users"></i>Usuarios</a> 
+                            </li>
+                            <li>
+                                <a href="../../users/alta/altaUsuari.html"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button id="dropdown"><i class="fa-solid fa-bars text-blanc"></i></button>
+                </div>
+            </div>
+            <div class="col-10 padding-zero">
+                <div>
+                    <!----------------------------------------------->
+                    <!--- DEBEN MODIFICAR EL TÍTULO-->
+                    <!---------------------------------------------->
+                    <h2>VISUALIZA ETIQUETA</h2>
+                    <!----------------------------------------------->
+                    <!--- PUEDEN EMPEZAR AQUÍ --->
+                     <!----------------------------------------------->
+
+
+                     <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="boxTaula">
+
+                                    <form class="formulari">
+                                        <div class="row">
+                                            <label for="name" class="col-3">Nombre Etiqueta:</label>
+                                            <div class="col-9">
+                                                <input value="Organización" type="text" class="inputVisualitzar" id="name" disabled="true" placeholder="Introduce aquí el título del post . . ." pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <h5 id="missatgeError"></h5>
+                                    <button id="botonTornar" class="botoTornar">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
