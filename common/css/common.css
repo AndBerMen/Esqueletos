@@ -1,3 +1,389 @@
+<<<<<<< HEAD
+:root{
+    --blauFosc: #222831;
+    --blauClar: #30475E;
+    --taronja: #FF7000;
+    --gris: #ECECEC;
+}
+
+body{
+    color: #30475E;
+    font-family: "Noto Serif", serif;
+}
+
+/********** CLASES GENERALES ************/
+button{
+    cursor: pointer;
+}
+.text-blanc{
+    color: white;
+}
+
+.padding-izq-zero{
+    padding-left: 0;
+}
+
+.padding-zero{
+    padding: 0;
+}
+
+.padding-der-zer{
+    padding-right: 0;
+}
+
+.margin-inf-zero{
+    padding-bottom: 0;
+}
+
+.centrat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo-azul{
+    background-color: var(--blauFosc);
+}
+.botoTaronja {
+    color: white;
+    background-color: var(--taronja);
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    font-weight: 700;
+    padding: 0.43em 0.7em;
+}
+/********** MENU LATERAL ************/
+#menu{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 16.6666666667%;
+    overflow-y: scroll;
+}
+
+#logo{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.separacio{
+    border-bottom: 1px solid white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    line-height: 1.5em;
+}
+
+nav ul li ul {
+    background-color: var(--blauClar);
+}
+
+nav ul li ul li{
+    border: 1px solid var(--blauFosc);
+}
+
+nav ul li ul li a:hover {
+    background-color: var(--blauFosc);
+    transition: 0.5s ease 0s;
+}
+
+
+nav i{
+    color: white;
+    text-align: center;
+    width: 1.8em;
+    font-size: 1.2em;
+}
+
+#dropdown{
+    display: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+#sesion,
+#sesion i {
+    margin-top: 0.1em;
+    background-color: #ececec;
+    color: var(--blauFosc);
+}
+
+#sesion:hover{
+    color: white;
+    background-color: var(--blauFosc);
+    border: 1px solid var(--blauFosc);
+    transition: 0.5s ease 0s;
+} 
+
+#sesion:hover i{
+    color: white;
+    background-color: var(--blauFosc);
+    transition: 0.5s ease 0s;
+}
+
+
+/********** PARTE CENTRAL ************/
+.col-10 > div > h2{
+    background-color: var(--taronja);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+}
+
+#menu,
+h2 {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+/*PARTE DE LAS TABLAS/FORMULARIOS*/
+/*FILTROS*/
+.rowFiltres {
+    background-color: var(--gris);
+}
+  
+.padding-zero {
+    padding: 0;
+}
+
+.boxFiltre {
+    padding: 2em 4em 2em 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxFiltre label {
+    padding-bottom: 0.3em;
+}
+
+.boxFiltre input, .boxFiltre select {
+    padding: 0.5em 2em 0.5em 1em;
+    background-color: white;
+    border-radius: 0.2em;
+    border: 0em;
+}
+
+/*BOX TAULA*/
+.boxTaula {
+    padding: 3em 0 2em 0;
+}
+  
+.checkBoxth {
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    width: auto;
+}
+  
+.boxBtn {
+    padding-bottom: 0.8em;
+}
+  
+.boxBtn button {
+    background-color: var(--taronja);
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border-radius: 0.3em;
+    border: 0em;
+    color: white;
+}
+
+.boxBtn button:hover{
+    color: var(--negre);
+}
+  
+.boxBtn label {
+    padding: 0 0.5em 0 0.5em;
+}
+  
+.boxBtn select {
+    padding: 0.2em 2em 0.2em 0.5em;
+    border-radius: 0.2em;
+    border-color: black;
+}
+
+.divAccions{
+    display: inline-flex;
+    gap: 1.5em;
+    color: var(--blauClar);
+}
+
+.divAccions a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.divAccions i:hover{
+    color: var(--taronja);
+}
+
+/*TAULA*/
+.taulaGestio {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    border: 0.01px solid black;
+}
+
+.taulaGestio, th{
+    border-top: 0.01px solid black;
+    border-bottom: 0.01px solid black;
+
+}
+
+.taulaGestio img {
+    width: 1.3em;
+    cursor: pointer;
+}
+
+thead{
+    background-color:var(--gris);
+    border-bottom: 1px solid var(--blauClar);
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--gris);
+}
+
+td, th {
+    padding: 0.5em 3em 0.5em 3em;
+}
+
+.veureMes{
+    text-align: center;
+}
+
+.veureMes a{
+    text-decoration: none;
+    color: black;
+}
+
+.veureMes a:hover{
+    color: var(--taronja);
+}
+
+/*FORMULARIS (ALTA, MODIFICAR I VISUALITZAR)*/
+.formulari{
+    display: grid;
+    gap: 1em;    
+}
+
+.inputVisualitzar{
+    background-color: var(--gris);
+    padding: 0.3em 0.8em;
+    border-radius: 0.35em;
+    width: 100%;
+}
+
+/*MEDIAQUERY*/
+@media only screen and (max-width: 1100px) {
+    #logo{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 900px)
+{   
+    .container-fluid > .row {
+        flex-direction: column;
+      }
+   
+    .container-fluid > .row > .col-10 {
+        width: 100%;
+    }
+
+    /********** HEADER ************/
+    .container-fluid > .row > .col-2{
+        height: 4.2em;
+    }
+    #menu{
+        position: fixed;
+        right:0;
+        width: 100%;
+        display: flex;
+        bottom: auto;
+        align-items: center;
+        justify-content: space-between;
+        overflow:visible;
+    }
+
+    nav{
+        display: none;
+        top: 4.2em;
+    }
+
+    nav ul{
+        margin-top: 0em;
+        background-color: var(--blauFosc);
+    }
+  
+    .show{
+        border-top: 1px solid white;
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-height: calc(100vh - 4.2em);
+        overflow: scroll;
+        animation: slideDown 0.4s ease-in-out;
+    }
+
+    #logo {
+        width: 5em;
+        border-bottom: none;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+
+    .separacio{
+        border-bottom: none;
+    }
+
+    #sesion{
+        background-color: #ececec;
+        border: 1px solid #ececec;
+    }
+
+    #dropdown{
+        display: block;
+        margin-right: 2em;
+    }
+
+    .col-10 > div > h2{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    /*********** DESPLAZAMIENTO DEL MENÚ ***********/
+    @keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+=======
 :root{
     --blauFosc: #222831;
     --blauClar: #30475E;
@@ -390,4 +776,5 @@ td, th {
         transform: translateY(0);
     }
 }
+>>>>>>> origin
 }
