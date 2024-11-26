@@ -6,7 +6,7 @@
 }
 
 body{
-    color: #30475E;
+    color: var(--blauClar);
     font-family: "Noto Serif", serif;
 }
 
@@ -72,7 +72,6 @@ button{
     margin-right: 5%;
 }
 
-
 nav ul li {
     list-style: none;
 }
@@ -104,7 +103,6 @@ nav ul li ul li a:hover {
     background-color: var(--blauFosc);
     transition: 0.5s ease 0s;
 }
-
 
 nav i{
     color: white;
@@ -138,7 +136,6 @@ nav i{
     background-color: var(--blauFosc);
     transition: 0.5s ease 0s;
 }
-
 
 /********** PARTE CENTRAL ************/
 .col-10 > div > h2{
@@ -215,7 +212,7 @@ h2 {
 .boxBtn select {
     padding: 0.2em 2em 0.2em 0.5em;
     border-radius: 0.2em;
-    border-color: black;
+    border-color: var(--blauFosc);
 }
 
 .divAccions{
@@ -238,13 +235,12 @@ h2 {
     border-collapse: collapse;
     text-align: center;
     width: 100%;
-    border: 0.01px solid black;
+    border: 0.01px solid var(--blauFosc);
 }
 
 .taulaGestio, th{
-    border-top: 0.01px solid black;
-    border-bottom: 0.01px solid black;
-
+    border-top: 0.01px solid var(--blauFosc);
+    border-bottom: 0.01px solid var(--blauFosc);
 }
 
 .taulaGestio img {
@@ -271,12 +267,26 @@ td, th {
 
 .veureMes a{
     text-decoration: none;
-    color: black;
+    color: var(--blauFosc);
 }
 
 .veureMes a:hover{
     color: var(--taronja);
 }
+
+.boxBtn a {
+    text-decoration: none; 
+    color: inherit;       
+}
+
+.boxBtn a:visited, 
+.boxBtn a:hover, 
+.boxBtn a:focus, 
+.boxBtn a:active {
+    text-decoration: none; 
+    color: inherit;       
+}
+
 
 /*FORMULARIS (ALTA, MODIFICAR I VISUALITZAR)*/
 .formulari{
@@ -297,7 +307,6 @@ td, th {
         width: 100%;
     }
 }
-
 
 @media only screen and (max-width: 900px)
 {   
@@ -381,5 +390,4 @@ td, th {
         transform: translateY(0);
     }
 }
-
 }

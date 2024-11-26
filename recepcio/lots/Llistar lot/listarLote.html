@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StockFlow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./listarProducto.css">
+    <link rel="shortcut icon" href="../../../img/favicon_2.ico" type="image/x-icon">
     <script src="../../../common/js/common.js"></script>
-    <link rel="stylesheet" href="alta.css">
-    <script src="alta.js" defer></script>
+    <!--<script src="./listarProducto.js"></script>-->
 </head>
 <body>
     <div class="container-fluid">
@@ -70,88 +69,62 @@
             </div>
             <div class="col-10 padding-zero">
                 <div>
-                    <h2>Alta de clients</h2>
+                    <h2>Detall del lot</h2>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
                                 <div class="boxTaula">
-                                    <div class="boxBtn">
-                                        <button id="botonAlta" type="button">
-                                            Donar d'alta
-                                        </button>
-                                    </div>
-
                                     <form class="formulari">
                                         <div class="row">
-                                            <label for="name" class="col-3">Nom/raó social:</label>
+                                            <label for="name" class="col-3">Codi del lot:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="name" placeholder="Ernesto" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
+                                                <input type="text" class="inputVisualitzar" id="name" placeholder="LOTE-A0001" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="address" class="col-3">Domicili:</label>
+                                            <label for="address" class="col-3">ID del producte:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="c/ ejemplo, 42" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <input type="text" class="inputVisualitzar" id="address" placeholder="101" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <label for="address" class="col-3">Nom del proveïdor:</label>
+                                            <div class="col-9">
+                                                <input type="text" class="inputVisualitzar" id="address" placeholder="Distribuciones Alimentarias del Sur S.A." disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="nif" class="col-3">DNI/NIF:</label>
+                                            <label for="address" class="col-3">ID del proveïdor:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="nif" placeholder="23947534H" pattern="^[a-zA-Z0-9]{1,10}$" required>
+                                                <input type="text" class="inputVisualitzar" id="address" placeholder="100000012" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <label for="nif" class="col-3">Unitats totals:</label>
+                                            <div class="col-9">
+                                                <input type="number" class="inputVisualitzar" id="nif" placeholder="500" disabled="true" pattern="^[a-zA-Z0-9]{1,10}$" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="phone" class="col-3">Telèfon:</label>
+                                            <label for="date" class="col-3">Data de producció:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="phone" placeholder="654785453" pattern="^\d{9,15}$" required>
+                                                <input type="text" class="inputVisualitzar" id="production" placeholder="2024-01-15" disabled="true"  pattern="^\d{9,15}$" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="email" class="col-3">Correu:</label>
+                                            <label for="email" class="col-3">Data d'expiració:</label>
                                             <div class="col-9">
-                                                <input type="email" class="inputVisualitzar" id="email" placeholder="ejemplo@gmail.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="row">
-                                            <label for="state_id" class="col-3">Selecciona el país:</label>
-                                            <div class="col-9">
-                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
-                                                    <option value="">Selecciona un país</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <!-- PARTE QUE SE BORRARÁ CUANDO SEA FUNCIONAL -->
-                                        <div class="row">
-                                            <label for="state_id" class="col-3">Selecciona la provincia:</label>
-                                            <div class="col-9">
-                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
-                                                    <option value="">Selecciona la provincia</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <label for="state_id" class="col-3">Selecciona la ciutat:</label>
-                                            <div class="col-9">
-                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
-                                                    <option value="">Selecciona la ciutat</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <label for="email" class="col-3">Codi postal:</label>
-                                            <div class="col-9">
-                                                <input type="email" class="inputVisualitzar" id="email" placeholder="34546" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                                                <input type="text" class="inputVisualitzar" id="expire" placeholder="2024-07-15" disabled="true"  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
                                             </div>
                                         </div>
                                     </form>
-                                    <h5 id="missatgeError"></h5>
-                                    <a href="../llistar/llistar.html">Tornar</a>
+                                    <a href="../lots.html">Tornar</a>
                                 </div>
                             </div>
                         </div>
