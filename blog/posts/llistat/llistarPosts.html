@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
-    <link rel="shortcut icon" href="img/favicon_4.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/favicon_4.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css">
-    <script src="blog.js"></script>
-
+    <script src="llistarPosts.js"></script>
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -29,19 +29,19 @@
                     <nav>
                         <ul id="opciones" class="padding-izq-zero">
                             <li>
-                                <a href=""><i class="fa-regular fa-newspaper"></i>Posts</a>
+                                <a href="../../posts/llistat/llistarPosts.html"><i class="fa-regular fa-newspaper"></i>Posts</a>
                             </li>
                             <li>
-                                <a href=""><i class="fa-regular fa-message"></i>Comentarios</a> 
+                                <a href="../../comments/llistat/llistarComentaris.html"><i class="fa-regular fa-message"></i>Comentarios</a> 
                             </li>
                             <li>
-                                <a href=""><i class="fa-solid fa-tag"></i>Etiquetas</a>
+                                <a href="../../tag/llistat/llistarEtiquetes.html"><i class="fa-solid fa-tag"></i>Etiquetas</a>
                             </li>
                             <li>
-                                <a href=""><i class="fa-solid fa-users"></i>Usuarios</a> 
+                                <a href="../../users/llistar/llistarUsuaris.html"><i class="fa-solid fa-users"></i>Usuarios</a> 
                             </li>
                             <li>
-                                <a href=""><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                                <a href="../../users/alta/altaUsuari.html"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
                             </li>
                         </ul>
                     </nav>
@@ -62,21 +62,30 @@
                             <div class="col-4">
                                 <div class="boxFiltre">
                                     <label for="filter-name">Filtrar por título:</label>
-                                    <input type="text" id="filter-name" placeholder="Introdueix un títol">
+                                    <input type="text" id="filter-name" placeholder="Introduce un título">
                                 </div>
                             </div>
     
                             <div class="col-4">
                                 <div class="boxFiltre">
                                     <label for="filter-dni">Filtrar por fecha publicación:</label>
-                                    <input type="text" id="filter-dni" placeholder="Introdueix una data">
+                                    <input type="text" id="filter-dni" placeholder="Introduce una fecha">
                                 </div>
                             </div>
 
                             <div class="col-4">
                                 <div class="boxFiltre">                
                                     <label for="filter-phone">Filtrar por etiqueta:</label>
-                                    <input type="text" id="filter-phone" placeholder="Introdueix una etiqueta">                 
+                                    <input type="text" id="filter-phone" placeholder="Introduce una etiqueta">                 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- FILTRES BOTÓ --->
+                        <div class="row rowFiltres">
+                            <div class="col-12">
+                                <div class="container-button-filter">
+                                    <button id="filtre" class="filter-button">Filtrar</button>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +94,7 @@
                             <div class="col-12">
                                 <div class="boxTaula">
                                     <div class="boxBtn">
-                                        <button id="altaCliente">Nuevo Post</button>
+                                        <button id="alta">Nuevo Post</button>
                                         <label for="accionsLot">Acciones en lote</label>
                                         <select name="accionsLot">
                                             <option value="">Selecciona una acción</option>
@@ -100,8 +109,8 @@
                                                 </th>
                                                 <th>ID</th>
                                                 <th>Título</th>
+                                                <th>Etiqueta</th>
                                                 <th>Fecha Publicación</th>
-                                                <th>Etiqueta</th> 
                                                 <th>Acciones</th>
                                             </tr>
                                         </thead>
@@ -116,14 +125,14 @@
                                                 <td>2024-11-26</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -138,14 +147,14 @@
                                                 <td>2024-11-25</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -160,14 +169,14 @@
                                                 <td>2024-11-24</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -182,14 +191,14 @@
                                                 <td>2024-11-23</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -204,14 +213,14 @@
                                                 <td>2024-11-23</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -226,14 +235,14 @@
                                                 <td>2024-11-21</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -248,14 +257,14 @@
                                                 <td>2024-11-20</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -270,14 +279,14 @@
                                                 <td>2024-11-19</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -292,14 +301,14 @@
                                                 <td>2024-11-20</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -314,14 +323,14 @@
                                                 <td>2024-11-17</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
+                                                        <a href="../modificar/modificaPost.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualizar/visualizar.html">
+                                                        <a href="../visualitzar/visualitzaPost.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
                                                         </a>
                                                     </div>
                                                 </td>

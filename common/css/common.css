@@ -183,6 +183,29 @@ h2 {
     border: 0em;
 }
 
+/*FILTRE BOTÓ*/
+.container-button-filter {
+    display: flex;
+    align-items: center;
+    padding-right: 4em;
+    padding-bottom: 1em;
+}
+
+.filter-button {
+    background-color: var(--taronja);
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border-radius: 0.3em;
+    border: 0em;
+    color: white;
+    margin-left: auto;
+}
+
+
+.filter-button:hover{
+    color: var(--negre);
+}
+
+
 /*BOX TAULA*/
 .boxTaula {
     padding: 3em 0 2em 0;
@@ -235,6 +258,7 @@ h2 {
 }
 
 /*TAULA*/
+
 .taulaGestio {
     border-collapse: collapse;
     text-align: center;
@@ -290,6 +314,14 @@ td, th {
     padding: 0.3em 0.8em;
     border-radius: 0.35em;
     width: 100%;
+}
+
+.botoTornar{
+    background-color: var(--blauClar);
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border-radius: 0.3em;
+    border: 0em;
+    color: white;
 }
 
 /*MEDIAQUERY*/

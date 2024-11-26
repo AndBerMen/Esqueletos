@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockFlow - Llistar Etiquetes</title>
+    <title>StockFlow - Llistar Comentaros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
     <link rel="shortcut icon" href="../../img/favicon_4.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../../style.css">
-    <script src="llistarEtiquetes.js"></script>
+    <script src="llistarComentaris.js"></script>
     
 </head>
 <body>
@@ -53,7 +53,7 @@
                     <!----------------------------------------------->
                     <!--- DEBEN MODIFICAR EL TÍTULO-->
                      <!---------------------------------------------->
-                    <h2>LLISTAT ETIQUETES</h2>
+                    <h2>LLISTAT COMENTARIS</h2>
                     <!----------------------------------------------->
                     <!--- PUEDEN EMPEZAR AQUÍ --->
                     <!----------------------------------------------->
@@ -61,8 +61,8 @@
                         <div class="row rowFiltres">
                             <div class="col-4">
                                 <div class="boxFiltre">
-                                    <label for="filter-name">Filtrar por nombre:</label>
-                                    <input type="text" id="filter-name" placeholder="Introduce un nombre">
+                                    <label for="filter-name">Filtrar por post:</label>
+                                    <input type="text" id="filter-name" placeholder="Introduce el título del post">
                                 </div>
                             </div>
                             <div class="col-4"></div>
@@ -82,7 +82,7 @@
                             <div class="col-12">
                                 <div class="boxTaula">
                                     <div class="boxBtn">
-                                        <button id="alta">Nueva Etiqueta</button>
+                                        <button id="alta">Nuevo Comentario</button>
                                         <label for="accionsLot">Acciones en lote</label>
                                         <select name="accionsLot">
                                             <option value="">Selecciona una acción</option>
@@ -96,7 +96,8 @@
                                                     <input type="checkbox">
                                                 </th>
                                                 <th>ID</th>
-                                                <th>Nombre</th>
+                                                <th>Descripción</th>
+                                                <th>Título Post</th>
                                                 <th>Acciones</th>
                                             </tr>
                                         </thead>
@@ -106,13 +107,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>1</td>
-                                                <td>Organización</td>
+                                                <td>Aplicamos algunas de estas estrategias en nuestro almacén, ¡y el cambio ha sido increíble! Ahora todo está mucho más organizado.</td>
+                                                <td>Estrategias para optimizar espacio</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -126,13 +128,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>2</td>
-                                                <td>Sistema ERP</td>
+                                                <td>Nos decidimos por un sistema recomendado aquí y realmente ha facilitado el seguimiento de nuestros productos. ¡Vale la pena!</td>
+                                                <td>Implementar un sistema de gestión</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -146,13 +149,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>3</td>
-                                                <td>Transformación </td>
+                                                <td>Digitalizar fue un antes y un después para nuestro negocio. Ahora todo fluye más rápido y con menos errores</td>
+                                                <td>Ventajas de la digitalización</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -166,13 +170,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>4</td>
-                                                <td>Buenas Prácticas</td>
+                                                <td>Me sentí identificado con varios de estos errores. Tomé nota y ya empecé a hacer cambios en mi almacén</td>
+                                                <td>Errores comunes en la gestión</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -186,13 +191,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>5</td>
-                                                <td>Tecnología</td>
+                                                <td>Gracias a estas recomendaciones compramos un escáner portátil, ¡es súper práctico y rápido!</td>
+                                                <td>Los mejores dispositivos de inventario</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -206,13 +212,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>6</td>
-                                                <td>Refrigeración</td>
+                                                <td>Subestimé la importancia del control en el almacén hasta que lo implementamos. Ahora todo es más claro y eficiente.</td>
+                                                <td>Importancia del control</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -226,13 +233,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>7</td>
-                                                <td>Picking y embalaje</td>
+                                                <td>Probar la optimización de rutas realmente redujo los tiempos de entrega. ¡Gracias por compartir estas ideas!</td>
+                                                <td>Cómo optimizar las rutas picking</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -246,13 +254,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>8</td>
-                                                <td>Logística</td>
+                                                <td>Implementar FIFO parecía complicado al inicio, pero con los consejos que leí aquí, lo hicimos sin problemas.</td>
+                                                <td>Implementar política FIFO</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -266,13 +275,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>9</td>
-                                                <td>Stock</td>
+                                                <td>Llevar un control más detallado del stock nos ahorró muchos dolores de cabeza. Este post fue de gran ayuda.</td>
+                                                <td>Gestión de Stock</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -286,13 +296,14 @@
                                                     <input type="checkbox">
                                                 </td>
                                                 <td>10</td>
-                                                <td>Seguridad</td>
+                                                <td>Invertir en seguridad nunca sobra. Siguiendo estas recomendaciones logramos un ambiente de trabajo más seguro.</td>
+                                                <td>Mejorar seguridad en tu almacén</td>
                                                 <td>
                                                     <div class="divAccions">
-                                                        <a href="../modificar/modificaEtiqueta.html">
+                                                        <a href="../modificar/modificaComentari.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzaEtiqueta.html">
+                                                        <a href="../visualitzar/visualitzaComentari.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
