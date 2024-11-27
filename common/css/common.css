@@ -324,12 +324,15 @@ td, th {
     width: 100%;
 }
 
+/* BOTO TORNAR HECHO POR EL JAVMAN MAGNIFICO */
+
 .botoTornar{
     background-color: var(--blauClar);
     padding: 0.4em 0.8em 0.4em 0.8em;
     border-radius: 0.3em;
     border: 0em;
     color: white;
+    text-decoration: none;
 }
 
 /*MEDIAQUERY*/
