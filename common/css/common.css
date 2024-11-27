@@ -258,12 +258,21 @@ button:hover{
     border-collapse: collapse;
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
+    border: 0.01px solid var(--blauClar);
+}
+
+.taulaGestio th{
+    border-top: 0.01px solid ;
+    border-bottom: 0.01px solid var(--blauClar);
+=======
     border: 0.01px solid var(--blauFosc);
 }
 
 .taulaGestio, th{
     border-top: 0.01px solid var(--blauFosc);
     border-bottom: 0.01px solid var(--blauFosc);
+>>>>>>> refs/remotes/origin/main
 
 }
 
@@ -281,8 +290,9 @@ tbody tr:nth-child(even){
     background-color: var(--gris);
 }
 
-td, th {
-    padding: 0.5em 3em 0.5em 3em;
+th, td {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 .veureMes{

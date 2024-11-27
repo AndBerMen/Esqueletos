@@ -1,3 +1,143 @@
+<<<<<<< HEAD
+
+.botoTaronja a {
+    color: white;
+}
+
+#filtros .botoTaronja{
+    background-color: var(--blauClar);
+}
+
+table a{
+    text-decoration: none;
+}
+
+table a:hover,
+table i:hover{
+    color: var(--blauFosc);
+}
+h2,
+#menu,
+#filtros,
+#usuarios > table{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.col-10 > div:nth-child(3){
+    padding: 1em;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    
+}
+
+#filtros{
+    width: fit-content;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1em 2em 1em 2em;
+    /*border: 1px solid var(--blauClar);*/
+}
+
+input{
+    /*border: 1px solid var(--blauClar);*/
+    border:none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#filtros > table > tr:first > td{
+    text-align: center;
+} 
+/*
+#filtros th{
+    padding-bottom: 0.7em;
+}
+*/
+#usuarios{
+    text-align: center;
+    padding: 1em;
+}
+
+#usuarios > table{
+    width: 100%;
+   /*border: 1px solid var(--blauClar);*/
+    border-collapse:collapse;
+}
+/*
+#usuarios  table  th,
+#usuarios  table  td{
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+*/
+ 
+#usuarios  table  thead{
+    border-bottom: 1px solid var(--blauClar);
+}
+
+#usuarios  table  thead{
+    background-color:var(--gris);
+   /* border-bottom: 1px solid var(--blauClar);*/
+}
+
+#usuarios  table tbody tr:nth-child(even){
+    background-color: var(--gris);
+}
+
+td i {
+    padding: 0 0.5em 0 0.5em;
+}
+
+#usuarios tr td:nth-child(3) {
+    font-weight: 600;
+}
+
+@media only screen and (max-width:610px){
+    #filtros thead{
+        text-align: center;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    #filtros td{
+        padding-right: 0;
+    }
+    #usuarios thead{
+        display: none;
+        border: 1px solid red;
+    }
+    table tr{
+        display: block;
+    }
+    table{
+        width: auto;
+    }
+    table td {
+        display: block;
+        padding-right: 0.5em;
+    }
+    #usuarios td {
+        text-align: right;
+    }
+
+    #usuarios tr{
+        border-top: 1px solid var(--blauClar);
+    }
+
+    #usuarios tr:last-child{
+        border-bottom: 1px solid var(--blauClar);
+    }
+
+    table td:before{
+        content:attr(data-label);
+        float: left;
+        font-weight: bold;
+        padding-left: 0.5em;
+    }
+=======
 :root{
     --blauFosc: #222831;
     --blauClar: #30475E;
@@ -110,4 +250,5 @@ td i {
         display: block;
         transform: rotate(180deg);
       }
+>>>>>>> refs/remotes/origin/main
 }
