@@ -204,7 +204,7 @@ h2 {
 
 /*BOX TAULA*/
 .boxTaula {
-    padding: 3em 0 2em 0;
+    padding: 3em 1em 2em 1em;
 }
   
 .checkBoxth {
@@ -216,7 +216,7 @@ h2 {
     padding-bottom: 0.8em;
 }
   
-.boxBtn button {
+button {
     background-color: var(--taronja);
     padding: 0.4em 0.8em 0.4em 0.8em;
     border-radius: 0.3em;
@@ -224,7 +224,7 @@ h2 {
     color: white;
 }
 
-.boxBtn button:hover{
+button:hover{
     color: var(--blauFosc);
 }
   
@@ -322,6 +322,12 @@ td, th {
     padding: 0.3em 0.8em;
     border-radius: 0.35em;
     width: 100%;
+}
+
+.inputSolsVisualitzar{
+    background-color: transparent;
+    border: 0;
+    appearance: none;
 }
 
 /* BOTO TORNAR HECHO POR EL JAVMAN MAGNIFICO */
