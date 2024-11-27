@@ -340,7 +340,7 @@ td, th {
 }
 
 @media only screen and (max-width: 900px)
-{   
+{
     .container-fluid > .row {
         flex-direction: column;
       }
@@ -440,5 +440,6 @@ td, th {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
     }
 }
