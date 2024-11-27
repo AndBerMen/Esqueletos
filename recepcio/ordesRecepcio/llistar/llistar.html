@@ -110,6 +110,13 @@
                     </li>
                     <li>
                       <a
+                        href="../../../recepcio/ordesRecepcio/llistar/llistar.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Ordres
+                        de recepció</a
+                      >
+                    </li>
+                    <li>
+                      <a
                         href="../../../recepcio/estatsOrdesRecepcio/estatsOrdesRecepcio.html"
                         ><i class="fa-solid fa-circle-chevron-right"></i>Estats
                         ordes de recepció</a
@@ -169,23 +176,21 @@
             <h2>Llistat ordes de Recepció</h2>
             <div class="container-fluid">
               <div class="row rowFiltres">
-                <div class="col-6">
+                <div class="col-4">
                   <div class="boxFiltre">
                     <label for="filter-name">Filtrar per data desde:</label>
                     <input type="date" id="filter-name" />
                   </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-4">
                   <div class="boxFiltre">
                     <label for="filter-dni">Filtrar per data fins:</label>
                     <input type="date" id="filter-dni" />
                   </div>
                 </div>
-              </div>
 
-              <div class="row rowFiltres">
-                <div class="col-6">
+                <div class="col-4">
                   <div class="boxFiltre">
                     <label for="filter-phone">Filtrar per proveïdor:</label>
                     <input
@@ -195,8 +200,10 @@
                     />
                   </div>
                 </div>
+              </div>
 
-                <div class="col-6">
+              <div class="row rowFiltres">
+                <div class="col-4">
                   <div class="boxFiltre">
                     <label for="filter-email">Filtrar per estat:</label>
                     <select name="estat" id="">
