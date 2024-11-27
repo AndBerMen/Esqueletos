@@ -6,7 +6,7 @@
 }
 
 body{
-    color: #30475E;
+    color: var(--blauClar);
     font-family: "Noto Serif", serif;
 }
 
@@ -46,8 +46,8 @@ button{
 .botoTaronja {
     color: white;
     background-color: var(--taronja);
-    border: 2px solid black;
-    box-shadow: 2px 2px black;
+    border: 2px solid var(--blauFosc);
+    box-shadow: 2px 2px var(--blauFosc);
     font-weight: 700;
     padding: 0.43em 0.7em;
 }
@@ -105,7 +105,6 @@ nav ul li ul li a:hover {
     transition: 0.5s ease 0s;
 }
 
-
 nav i{
     color: white;
     text-align: center;
@@ -122,7 +121,7 @@ nav i{
 #sesion,
 #sesion i {
     margin-top: 0.1em;
-    background-color: #ececec;
+    background-color: var(--gris);
     color: var(--blauFosc);
 }
 
@@ -139,7 +138,6 @@ nav i{
     transition: 0.5s ease 0s;
 }
 
-
 /********** PARTE CENTRAL ************/
 .col-10 > div > h2{
     background-color: var(--taronja);
@@ -155,6 +153,7 @@ nav i{
 h2 {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+
 /*PARTE DE LAS TABLAS/FORMULARIOS*/
 /*FILTROS*/
 .rowFiltres {
@@ -182,9 +181,30 @@ h2 {
     border: 0em;
 }
 
+/*FILTRE BOTÓ*/
+.container-button-filter {
+    display: flex;
+    align-items: center;
+    padding-right: 4em;
+    padding-bottom: 1em;
+}
+
+.filter-button {
+    background-color: var(--taronja);
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border-radius: 0.3em;
+    border: 0em;
+    color: white;
+    margin-left: auto;
+}
+
+.filter-button:hover{
+    color: var(--blauFosc);
+}
+
 /*BOX TAULA*/
 .boxTaula {
-    padding: 3em 0 2em 0;
+    padding: 3em 1em 2em 1em;
 }
   
 .checkBoxth {
@@ -196,7 +216,7 @@ h2 {
     padding-bottom: 0.8em;
 }
   
-.boxBtn button {
+button {
     background-color: var(--taronja);
     padding: 0.4em 0.8em 0.4em 0.8em;
     border-radius: 0.3em;
@@ -204,8 +224,8 @@ h2 {
     color: white;
 }
 
-.boxBtn button:hover{
-    color: var(--negre);
+button:hover{
+    color: var(--blauFosc);
 }
   
 .boxBtn label {
@@ -215,7 +235,7 @@ h2 {
 .boxBtn select {
     padding: 0.2em 2em 0.2em 0.5em;
     border-radius: 0.2em;
-    border-color: black;
+    border-color: var(--blauFosc);
 }
 
 .divAccions{
@@ -238,12 +258,21 @@ h2 {
     border-collapse: collapse;
     text-align: center;
     width: 100%;
+<<<<<<< HEAD
     border: 0.01px solid var(--blauClar);
 }
 
 .taulaGestio th{
     border-top: 0.01px solid ;
     border-bottom: 0.01px solid var(--blauClar);
+=======
+    border: 0.01px solid var(--blauFosc);
+}
+
+.taulaGestio, th{
+    border-top: 0.01px solid var(--blauFosc);
+    border-bottom: 0.01px solid var(--blauFosc);
+>>>>>>> refs/remotes/origin/main
 
 }
 
@@ -279,6 +308,19 @@ th, td {
     color: var(--taronja);
 }
 
+.boxBtn a {
+    text-decoration: none; 
+    color: inherit;       
+}
+
+.boxBtn a:visited, 
+.boxBtn a:hover, 
+.boxBtn a:focus, 
+.boxBtn a:active {
+    text-decoration: none; 
+    color: inherit;       
+}
+
 /*FORMULARIS (ALTA, MODIFICAR I VISUALITZAR)*/
 .formulari{
     display: grid;
@@ -292,6 +334,23 @@ th, td {
     width: 100%;
 }
 
+.inputSolsVisualitzar{
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+}
+
+/* BOTO TORNAR HECHO POR EL JAVMAN MAGNIFICO */
+
+.botoTornar{
+    background-color: var(--blauClar);
+    padding: 0.4em 0.8em 0.4em 0.8em;
+    border-radius: 0.3em;
+    border: 0em;
+    color: white;
+    text-decoration: none;
+}
+
 /*MEDIAQUERY*/
 @media only screen and (max-width: 1100px) {
     #logo{
@@ -299,9 +358,8 @@ th, td {
     }
 }
 
-
 @media only screen and (max-width: 900px)
-{   
+{
     .container-fluid > .row {
         flex-direction: column;
       }
@@ -357,8 +415,8 @@ th, td {
     }
 
     #sesion{
-        background-color: #ececec;
-        border: 1px solid #ececec;
+        background-color: var(--gris);
+        border: 1px solid var(--gris);
     }
 
     #dropdown{
@@ -370,6 +428,27 @@ th, td {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
+
+    /*Taula responsive*/
+
+    th{
+        display: none;
+    }
+
+    td{
+        display: block;
+    }
+
+    td::before{
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    td[data-no-colon="true"]::before {
+        content: ""; 
+    }
+
     /*********** DESPLAZAMIENTO DEL MENÚ ***********/
     @keyframes slideDown {
     from {
@@ -381,6 +460,5 @@ th, td {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
+    }
 }

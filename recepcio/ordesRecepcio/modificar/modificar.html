@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../common/css/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../common/css/grid.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../common/css/common.css"
+    />
+    <script src="../../../common/js/common.js"></script>
+
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../grid3.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="modificar.css" />
+    <script src="modificar.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <div id="menu" class="fondo-azul">
+            <div class="centrat separacio">
+              <img
+                src="../../../img/logo_footer2.png"
+                alt="Logo Stockflow"
+                id="logo"
+              />
+            </div>
+            <nav class="fondo-azul">
+              <ul id="opciones" class="padding-izq-zero">
+                <li>
+                  <a><i class="fa-solid fa-warehouse"></i>Administració</a>
+                  <ul class="padding-izq-zero">
+                    <li>
+                      <a
+                        href="../../../administracio/usuaris/llistat/llistatUsuaris.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Usuaris</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../../administracio/rols/llistat/llistatUserProfile.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Rols</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../../administracio/estatsProvinciesCiutats/state/llistaEstat.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Dades
+                        geogràfiques</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../../administracio/transportistes/llistar/llistatTransportistes.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Transportistes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    ><i class="fa-solid fa-file-invoice-dollar"></i>Enviament</a
+                  >
+                  <ul class="padding-izq-zero">
+                    <li>
+                      <a href="../../../enviament/clients/llistar/llistar.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Clients</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../../enviament/ordesEnviament/llistat/llistatOrdre.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Ordens
+                        d'enviament</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-boxes-stacked"></i>Recepció</a>
+                  <ul class="padding-izq-zero">
+                    <li>
+                      <a href="../../../recepcio/proveidors/proveidors.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Proveidors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../../recepcio/ordesRecepcio/llistar/llistar.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Ordres
+                        de recepció</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../../../recepcio/estatsOrdesRecepcio/estatsOrdesRecepcio.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Estats
+                        ordes de recepció</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../../recepcio/productes/productes.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Productes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../../recepcio/lots/lots.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Lots</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-box-open"></i>Magatzem</a>
+                  <ul class="padding-izq-zero">
+                    <li>
+                      <a href="../../../magatzem/inventaris/inventaris.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i>Gestió
+                        del magatzem</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../../magatzem/inventaris/inventaris.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Inventaris</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../../magatzem/incidents/incidencies.html"
+                        ><i class="fa-solid fa-circle-chevron-right"></i
+                        >Incidències</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="" id="sesion"
+                    ><i class="fa-solid fa-right-from-bracket"></i>Tancar
+                    sessió</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button id="dropdown" class="fondo-azul">
+              <i class="fa-solid fa-bars text-blanc"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-10 padding-zero">
+          <div>
+            <!----------------------------------------------->
+            <!--- DEBEN MODIFICAR EL TÍTULO-->
+            <!---------------------------------------------->
+            <h2>Modificar ordre</h2>
+            <!----------------------------------------------->
+            <!--- PUEDEN EMPEZAR AQUÍ --->
+            <!----------------------------------------------->
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="boxTaula">
+                    <div class="boxBtn">
+                      <button id="botonModificar" type="button">
+                        Guardar canvis
+                      </button>
+                    </div>
+                    <form class="formulari">
+                      <div class="row">
+                        <label for="name" class="col-3">Proveïdor:</label>
+                        <div class="col-9">
+                          <select class="inputVisualitzar" name="Proveïdor" id="">
+                            <option value="1">Suministros Técnicos S.L.</option>
+                            <option value="2">Componentes Electrónicos Avanzados S.A.</option>
+                            <option value="3">Maquinaria de Cocina del Norte S.L.</option>
+                            <option value="4">Distribuciones Alimentarias del Sur S.A.</option>
+                            <option value="5">Soluciones Informáticas Gallegas S.A.</option>
+                            <option value="6">Decoración Andaluza S.A.</option>
+                            <option value="7">Suministros Médicos del Cantábrico S.L.</option>
+                            <option value="8">Vinos y Licores de La Rioja S.A.</option>
+                            <option value="9">Tecnologías de la Información Murcianas S.L.</option>
+                            <option value="10">Golosinas de Castilla-La Mancha S.A.</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <label for="address" class="col-3">Data Estimada:</label>
+                        <div class="col-9">
+                          <input
+                            type="date"
+                            class="inputVisualitzar"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <label for="nif" class="col-3">Estat:</label>
+                        <div class="col-9">
+                            <select class="inputVisualitzar" name="estat" id="">
+                                <option value="1">Pendent</option>
+                                <option value="2">Descarregada</option>
+                                <option value="3">Desempaquetada</option>
+                                <option value="4">Emmagatzemada</option>
+                              </select>
+                        </div>
+                      </div>
+                    </form>
+                    <h5 id="missatgeError" class="text-danger"></h5>
+                    <a href="../llistar/llistar.html" class="botoTornar">Tornar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

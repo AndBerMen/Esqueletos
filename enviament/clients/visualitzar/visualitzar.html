@@ -14,16 +14,8 @@
     <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
     <script src="../../../common/js/common.js"></script>
-
-
-
-
-
-    <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="../grid3.css">
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="visualitzar.css">
-    <script src="visualitzar.js" defer></script>
+    <!-- <script src="visualitzar.js" defer></script> -->
 </head>
 <body>
     <div class="container-fluid">
@@ -63,7 +55,7 @@
                             <li>
                                 <a><i class="fa-solid fa-box-open"></i>Magatzem</a>
                                 <ul class="padding-izq-zero">
-                                    <li><a href="../../../magatzem/inventaris/inventaris.html"><i class="fa-solid fa-circle-chevron-right"></i>Gestió del magatzem</a></li>
+                                    <li><a href="../../../magatzem/gestioMagatzem/gestioMagatzem.html"><i class="fa-solid fa-circle-chevron-right"></i>Gestió del magatzem</a></li>
                                     <li><a href="../../../magatzem/inventaris/inventaris.html"><i class="fa-solid fa-circle-chevron-right"></i>Inventaris</a></li>
                                     <li><a href="../../../magatzem/incidents/incidencies.html"><i class="fa-solid fa-circle-chevron-right"></i>Incidències</a></li>
                                 </ul>
@@ -78,14 +70,7 @@
             </div>
             <div class="col-10 padding-zero">
                 <div>
-                    <!----------------------------------------------->
-                    <!--- DEBEN MODIFICAR EL TÍTULO-->
-                     <!---------------------------------------------->
                     <h2>Visualitzar clients</h2>
-                    <!----------------------------------------------->
-                    <!--- PUEDEN EMPEZAR AQUÍ --->
-                     <!----------------------------------------------->
-
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
@@ -94,60 +79,60 @@
                                         <div class="row">
                                             <label for="name" class="col-3">Nom/raó social:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="name" placeholder="Ernesto" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
+                                                <input value="Miguel" type="text" class="inputVisualitzar inputSolsVisualitzar" id="name" placeholder="Ernesto" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
                                             <label for="address" class="col-3">Domicili:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="c/ ejemplo, 42" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <input value="C/ Ejemplo, 31" type="text" class="inputVisualitzar inputSolsVisualitzar" id="address" placeholder="c/ ejemplo, 42" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
                                             <label for="nif" class="col-3">DNI/NIF:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="nif" placeholder="23947534H" disabled="true" pattern="^[a-zA-Z0-9]{1,10}$" required>
+                                                <input value="643643643" type="text" class="inputVisualitzar inputSolsVisualitzar" id="nif" placeholder="23947534H" disabled="true" pattern="^[a-zA-Z0-9]{1,10}$" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
                                             <label for="phone" class="col-3">Telèfon:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="phone" placeholder="654785453" disabled="true"  pattern="^\d{9,15}$" required>
+                                                <input value="654654654" type="text" class="inputVisualitzar inputSolsVisualitzar" id="phone" placeholder="654785453" disabled="true"  pattern="^\d{9,15}$" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
                                             <label for="email" class="col-3">Correu:</label>
                                             <div class="col-9">
-                                                <input type="email" class="inputVisualitzar" id="email" placeholder="ejemplo@gmail.com" disabled="true"  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                                                <input value="miguel@gmail.com" type="email" class="inputVisualitzar inputSolsVisualitzar" id="email" placeholder="ejemplo@gmail.com" disabled="true"  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="state_id" class="col-3">Selecciona el país:</label>
+                                            <label for="state_id" class="col-3">País:</label>
                                             <div class="col-9">
-                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" disabled="true" required>
-                                                    <option value="">Selecciona un país</option>
+                                                <select class="inputVisualitzar inputSolsVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" disabled="true" required>
+                                                    <option value="">España</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <!-- PARTE QUE SE BORRARÁ CUANDO SEA FUNCIONAL -->
                                         <div class="row">
-                                            <label for="state_id" class="col-3">Selecciona la provincia:</label>
+                                            <label for="state_id" class="col-3">Provincia:</label>
                                             <div class="col-9">
-                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
-                                                    <option value="">Selecciona la provincia</option>
+                                                <select class="inputVisualitzar inputSolsVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" disabled="true"  required>
+                                                    <option value="">Alicante</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <label for="state_id" class="col-3">Selecciona la ciutat:</label>
+                                            <label for="state_id" class="col-3">Ciutat:</label>
                                             <div class="col-9">
-                                                <select class="inputVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" required>
-                                                    <option value="">Selecciona la ciutat</option>
+                                                <select class="inputVisualitzar inputSolsVisualitzar" onchange="cargarProvincias()" name="state_id" id="state_id" disabled="true" required>
+                                                    <option value="">Pego</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -155,11 +140,11 @@
                                         <div class="row">
                                             <label for="email" class="col-3">Codi postal:</label>
                                             <div class="col-9">
-                                                <input type="email" class="inputVisualitzar" id="email" placeholder="34546" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                                                <input value="46732" type="email" class="inputVisualitzar inputSolsVisualitzar" id="email" disabled="true" placeholder="34546" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
                                             </div>
                                         </div>
                                     </form>
-                                    <a href="../llistar/llistar.html">Tornar</a>
+                                    <a href="../llistar/llistar.html"><button>Tornar</button></a>
                                 </div>
                             </div>
                         </div>

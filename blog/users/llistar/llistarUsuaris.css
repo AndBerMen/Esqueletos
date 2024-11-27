@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .botoTaronja a {
     color: white;
@@ -136,4 +137,118 @@ td i {
         font-weight: bold;
         padding-left: 0.5em;
     }
+=======
+:root{
+    --blauFosc: #222831;
+    --blauClar: #30475E;
+    --taronja: #FF7000;
+    --gris: #ECECEC;
+}
+
+.botoTaronja a {
+    color: white;
+}
+
+.botoTaronja{
+    margin-top: 1em;
+}
+
+table a{
+    text-decoration: none;
+}
+
+table a:hover,
+table i:hover{
+    color: var(--blauFosc);
+}
+h2,
+#menu,
+#filtros,
+#usuarios > table{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.col-10 > div:nth-child(3){
+    padding: 1em;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    
+}
+
+#filtros{
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.5em;
+    padding: 1em 2em 1em 2em;
+    border: 1px solid var(--blauClar);
+}
+
+input{
+    border: 1px solid var(--blauClar);
+}
+
+#filtros > table > tr:first > td{
+    text-align: center;
+} 
+
+#usuarios{
+    text-align: center;
+    padding: 1em;
+}
+
+#usuarios > table{
+    width: 100%;
+   border: 1px solid var(--blauClar);
+    border-collapse:collapse;
+}
+
+#usuarios  table  th,
+#usuarios  table  td{
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+
+ 
+}
+
+#usuarios  table  thead{
+    background-color:var(--gris);
+    border-bottom: 1px solid var(--blauClar);
+}
+
+#usuarios  table tbody tr:nth-child(even){
+    background-color: var(--gris);
+}
+
+td i {
+    padding: 0 0.5em 0 0.5em;
+}
+
+#usuarios tr td:nth-child(3) {
+    font-weight: 600;
+}
+
+@media only screen and (max-width:610){
+    table{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    table{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+
+    }
+
+    .tabla tr {
+        display: block;
+        float: left;
+      }
+      .tabla td {
+        display: block;
+        transform: rotate(180deg);
+      }
+>>>>>>> refs/remotes/origin/main
 }

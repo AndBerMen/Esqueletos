@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
 #222831 azul oscuro 
 #30475E azul claro
@@ -223,3 +224,232 @@ h2{
             transform: translateY(0);
         }
     }
+=======
+/* 
+#222831 azul oscuro 
+#30475E azul claro
+#FF7000 naranja
+#ECECEC gris
+*/
+:root{
+    --blauFosc: #222831;
+    --blauClar: #30475E;
+    --taronja: #FF7000;
+    --gris: #ECECEC;
+}
+
+
+* {
+    color: var(--blauClar);
+    font-family: "Noto Serif", serif;
+}
+
+/********** CLASES GENERALES ************/
+button{
+    cursor: pointer;
+}
+
+.padding-izq-zero{
+    padding-left: 0;
+}
+
+.padding-zero{
+    padding: 0;
+}
+
+.padding-der-zer{
+    padding-right: 0;
+}
+
+.padding-inf-zero{
+    padding-bottom: 0;
+}
+
+.centrat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo-gris{
+    background-color: var(--gris);
+}
+
+/********** MENU LATERAL ************/
+#menu{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 16.6666666667%;
+    overflow-y: scroll;
+}
+
+#logo{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+.separacio{
+    border-bottom: 1px solid var(--blauClar);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--blauClar);
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    line-height: 1.5em;
+}
+
+nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li ul {
+    background-color: var(--blauClar);
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: var(--blauFosc);
+    transition: 0.5s ease 0s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+nav ul li a:hover i{
+    color:white;
+    transition: 0.5s ease 0s;
+}
+
+nav i{
+    color: var(--blauClar);
+    text-align: center;
+    width: 2.5em;
+    font-size: 1.2em;
+}
+
+#dropdown{
+    display: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+/********** PARTE CENTRAL ************/
+.col-10 > div > h2{
+    background-color: var(--blauFosc);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+}
+
+#menu,
+h2{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #logo{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{   
+    .container-fluid > .row {
+        flex-direction: column;
+      }
+   
+    .container-fluid > .row > .col-10 {
+        width: 100%;
+    }
+    /********** HEADER ************/
+    .container-fluid > .row > .col-2{
+        height: 4.2em;
+    }
+
+    #menu{
+        right:0;
+        width: 100%;
+        display: flex;
+        bottom: auto;
+        align-items: center;
+        justify-content: space-between;
+        overflow:visible;
+    }
+    nav{
+        display: none;
+        top: 4.2em;
+    }
+
+    nav ul{
+        margin-top: 0em;
+        background-color: #ececec;
+        border: 1px solid var(--blauClar);
+    }
+
+    nav ul li{
+        border: 1px solid var(--blauClar);
+    }
+
+    .show{
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-height: calc(100vh - 3.2em);
+        overflow: scroll;
+        animation: slideDown 0.4s ease-in-out;
+    }
+
+    #logo {
+        width: 5em;
+        border-bottom: none;
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+
+    .separacio{
+        border-bottom: none;
+    }
+
+
+    #dropdown{
+        display: block;
+        margin-right: 2em;
+    }
+
+
+    .col-10 > div > h2{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    /*********** DESPLAZAMIENTO DEL MENÚ ***********/
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+}
+>>>>>>> refs/remotes/origin/main

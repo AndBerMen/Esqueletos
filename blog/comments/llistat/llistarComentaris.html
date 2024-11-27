@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow - Llistar Comentaros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
+    <link rel="shortcut icon" href="../../img/favicon_4.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../style.css">
+    <script src="llistarComentaris.js"></script>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div id="menu" class="fondo-gris">
+                    <div class="centrat separacio">
+                        <img src="../../img/logo_header.png" alt="Logo Stockflow" id="logo">
+                    </div>
+                    <nav>
+                        <ul id="opciones" class="padding-izq-zero">
+                            <li>
+                                <a href="../../posts/llistat/llistarPosts.html"><i class="fa-regular fa-newspaper"></i>Posts</a>
+                            </li>
+                            <li>
+                                <a href="../../comments/llistat/llistarComentaris.html"><i class="fa-regular fa-message"></i>Comentarios</a> 
+                            </li>
+                            <li>
+                                <a href="../../tag/llistat/llistarEtiquetes.html"><i class="fa-solid fa-tag"></i>Etiquetas</a>
+                            </li>
+                            <li>
+                                <a href="../../users/llistar/llistarUsuaris.html"><i class="fa-solid fa-users"></i>Usuarios</a> 
+                            </li>
+                            <li>
+                                <a href="../../users/alta/altaUsuari.html"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button id="dropdown"><i class="fa-solid fa-bars text-blanc"></i></button>
+                </div>
+            </div>
+            <div class="col-10 padding-zero">
+                <div>
+                    <!----------------------------------------------->
+                    <!--- DEBEN MODIFICAR EL TÍTULO-->
+                     <!---------------------------------------------->
+                    <h2>LLISTAT COMENTARIS</h2>
+                    <!----------------------------------------------->
+                    <!--- PUEDEN EMPEZAR AQUÍ --->
+                    <!----------------------------------------------->
+                    <div class="container-fluid">
+                        <div class="row rowFiltres">
+                            <div class="col-4">
+                                <div class="boxFiltre">
+                                    <label for="filter-name">Filtrar por post:</label>
+                                    <input type="text" id="filter-name" placeholder="Introduce el título del post">
+                                </div>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-4"></div>
+                        </div>
+
+                        <!--- FILTRES BOTÓ --->
+                        <div class="row rowFiltres">
+                            <div class="col-12">
+                                <div class="container-button-filter">
+                                    <button id="filtre" class="filter-button">Filtrar</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="boxTaula">
+                                    <div class="boxBtn">
+                                        <button id="alta">Nuevo Comentario</button>
+                                        <label for="accionsLot">Acciones en lote</label>
+                                        <select name="accionsLot">
+                                            <option value="">Selecciona una acción</option>
+                                            <option value="">Eliminar</option>
+                                        </select>
+                                    </div>
+                                    <table class="taulaGestio">
+                                        <thead>
+                                            <tr>
+                                                <th class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </th>
+                                                <th>ID</th>
+                                                <th>Descripción</th>
+                                                <th>Título Post</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="files">
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>1</td>
+                                                <td>Aplicamos algunas de estas estrategias en nuestro almacén, ¡y el cambio ha sido increíble! Ahora todo está mucho más organizado.</td>
+                                                <td>Estrategias para optimizar espacio</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>2</td>
+                                                <td>Nos decidimos por un sistema recomendado aquí y realmente ha facilitado el seguimiento de nuestros productos. ¡Vale la pena!</td>
+                                                <td>Implementar un sistema de gestión</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>3</td>
+                                                <td>Digitalizar fue un antes y un después para nuestro negocio. Ahora todo fluye más rápido y con menos errores</td>
+                                                <td>Ventajas de la digitalización</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>4</td>
+                                                <td>Me sentí identificado con varios de estos errores. Tomé nota y ya empecé a hacer cambios en mi almacén</td>
+                                                <td>Errores comunes en la gestión</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>5</td>
+                                                <td>Gracias a estas recomendaciones compramos un escáner portátil, ¡es súper práctico y rápido!</td>
+                                                <td>Los mejores dispositivos de inventario</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>6</td>
+                                                <td>Subestimé la importancia del control en el almacén hasta que lo implementamos. Ahora todo es más claro y eficiente.</td>
+                                                <td>Importancia del control</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>7</td>
+                                                <td>Probar la optimización de rutas realmente redujo los tiempos de entrega. ¡Gracias por compartir estas ideas!</td>
+                                                <td>Cómo optimizar las rutas picking</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>8</td>
+                                                <td>Implementar FIFO parecía complicado al inicio, pero con los consejos que leí aquí, lo hicimos sin problemas.</td>
+                                                <td>Implementar política FIFO</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>9</td>
+                                                <td>Llevar un control más detallado del stock nos ahorró muchos dolores de cabeza. Este post fue de gran ayuda.</td>
+                                                <td>Gestión de Stock</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td>10</td>
+                                                <td>Invertir en seguridad nunca sobra. Siguiendo estas recomendaciones logramos un ambiente de trabajo más seguro.</td>
+                                                <td>Mejorar seguridad en tu almacén</td>
+                                                <td>
+                                                    <div class="divAccions">
+                                                        <a href="../modificar/modificaComentari.html">
+                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                        </a>
+                                                        <a href="../visualitzar/visualitzaComentari.html">
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i  class="fa-regular fa-trash-can eliminar"></i>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <!-- 
+                                    ***APARTADO FUNCIONAL CON BASE DE DATOS***
+                                    <table id="clientesTable" class="taulaGestio">
+                                        <thead>
+                                            <tr>
+                                                <td class="checkBoxth">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <th>ID</th>
+                                                <th>Nom</th>
+                                                <th>DNI/NIF</th>
+                                                <th>Teléfon</th>
+                                                <th>Correu</th>
+                                                <th>Accions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="files">
+                                            los clientes se van agregando aqui
+                                        </tbody>
+                                    </table>
+                                    -->
+                                </div>
+                            </div>
+                            <div class="veureMes">
+                                <a href="#">Veure Més</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

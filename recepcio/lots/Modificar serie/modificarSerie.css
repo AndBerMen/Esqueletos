@@ -1,0 +1,17 @@
+.paginador{
+    color: var(negre);
+    margin-bottom: 2em;
+    margin-top: -2em;
+}
+
+.paginador a{
+    background-color: var(--blanc);
+    padding: 0.2em;
+    border: solid 1px var(--negre);
+    text-decoration: none;
+    color: var(--negre);
+}
+
+button{
+    cursor: pointer;
+}

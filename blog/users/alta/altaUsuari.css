@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --blauFosc: #222831;
     --blauClar: #30475E;
@@ -57,3 +58,34 @@ input{
         font-weight: bold;
     }
 }
+=======
+:root{
+    --blauFosc: #222831;
+    --blauClar: #30475E;
+    --taronja: #FF7000;
+    --gris: #ECECEC;
+}
+
+#usuario{
+    width: fit-content;
+    margin: auto;
+    margin-top: 2em;
+    padding: 3em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+td{
+    padding-top:1em;
+}
+
+input{
+  
+
+    border: 1px solid var(--blauClar);
+}
+
+>>>>>>> refs/remotes/origin/main
