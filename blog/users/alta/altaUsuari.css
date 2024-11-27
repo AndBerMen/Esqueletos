@@ -10,6 +10,13 @@
     margin: auto;
     margin-top: 2em;
     padding: 3em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#usuario td:last-child{
+    display: flex;
+    justify-content: space-around;
+
 }
 
 a{
@@ -22,8 +29,31 @@ td{
 }
 
 input{
-  
-
-    border: 1px solid var(--blauClar);
+    border: none;
+    /*border: 1px solid var(--blauClar);*/
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+@media only screen and (max-width:610px){
+    #usuario{
+        padding: 1em 2em;
+        margin-bottom: 2em;
+    }
+    table tr{
+        display: block;
+    }
+  
+    table td {
+        display: block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    
+
+    table td:before{
+        content:attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}

@@ -177,8 +177,8 @@ h2{
 
     nav ul li{
         border: 1px solid var(--blauClar);
-    }
 
+    }
     .show{
         position: absolute;
         display: block;
@@ -210,7 +210,7 @@ h2{
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-
+}
     /*********** DESPLAZAMIENTO DEL MENÚ ***********/
     @keyframes slideDown {
         from {
@@ -223,5 +223,3 @@ h2{
             transform: translateY(0);
         }
     }
-
-}

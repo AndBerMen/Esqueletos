@@ -1,16 +1,10 @@
-:root{
-    --blauFosc: #222831;
-    --blauClar: #30475E;
-    --taronja: #FF7000;
-    --gris: #ECECEC;
-}
 
 .botoTaronja a {
     color: white;
 }
 
-.botoTaronja{
-    margin-top: 1em;
+#filtros .botoTaronja{
+    background-color: var(--blauClar);
 }
 
 table a{
@@ -40,19 +34,25 @@ a{
 #filtros{
     width: fit-content;
     margin: auto;
-    margin-top: 0.5em;
+    margin-top: 2em;
     padding: 1em 2em 1em 2em;
-    border: 1px solid var(--blauClar);
+    /*border: 1px solid var(--blauClar);*/
 }
 
 input{
-    border: 1px solid var(--blauClar);
+    /*border: 1px solid var(--blauClar);*/
+    border:none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 #filtros > table > tr:first > td{
     text-align: center;
 } 
-
+/*
+#filtros th{
+    padding-bottom: 0.7em;
+}
+*/
 #usuarios{
     text-align: center;
     padding: 1em;
@@ -60,21 +60,24 @@ input{
 
 #usuarios > table{
     width: 100%;
-   border: 1px solid var(--blauClar);
+   /*border: 1px solid var(--blauClar);*/
     border-collapse:collapse;
 }
-
+/*
 #usuarios  table  th,
 #usuarios  table  td{
     padding-top: 0.7em;
     padding-bottom: 0.7em;
-
+}
+*/
  
+#usuarios  table  thead{
+    border-bottom: 1px solid var(--blauClar);
 }
 
 #usuarios  table  thead{
     background-color:var(--gris);
-    border-bottom: 1px solid var(--blauClar);
+   /* border-bottom: 1px solid var(--blauClar);*/
 }
 
 #usuarios  table tbody tr:nth-child(even){
@@ -89,25 +92,48 @@ td i {
     font-weight: 600;
 }
 
-@media only screen and (max-width:610){
-    table{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+@media only screen and (max-width:610px){
+    #filtros thead{
+        text-align: center;
     }
 
-    table{
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-
+    input{
+        width: 100%;
     }
 
-    .tabla tr {
+    #filtros td{
+        padding-right: 0;
+    }
+    #usuarios thead{
+        display: none;
+        border: 1px solid red;
+    }
+    table tr{
         display: block;
+    }
+    table{
+        width: auto;
+    }
+    table td {
+        display: block;
+        padding-right: 0.5em;
+    }
+    #usuarios td {
+        text-align: right;
+    }
+
+    #usuarios tr{
+        border-top: 1px solid var(--blauClar);
+    }
+
+    #usuarios tr:last-child{
+        border-bottom: 1px solid var(--blauClar);
+    }
+
+    table td:before{
+        content:attr(data-label);
         float: left;
-      }
-      .tabla td {
-        display: block;
-        transform: rotate(180deg);
-      }
+        font-weight: bold;
+        padding-left: 0.5em;
+    }
 }

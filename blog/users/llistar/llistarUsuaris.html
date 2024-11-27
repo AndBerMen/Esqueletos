@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../style.css">
     <link rel="stylesheet" type="text/css" href="llistarUsuaris.css">
     <link rel="shortcut icon" href="../../img/favicon_4.ico" type="image/x-icon">
+    <script src="../../blog.js"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -59,27 +60,31 @@
                 </div>
                 <div id="filtros" class="fondo-gris">
                     <table>
-                        <tr>
-                            <td colspan="2"> Buscar usuario</td>
-                        </tr>
-                        <tr>
-                            <td>Nombre:</td>
-                            <td>
-                                <input type="text" name="" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Correo electrónico: </td>
-                            <td>
-                                <input type="email" name="" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <button class="botoTaronja">Buscar</button>
-                            </td>
-                        </tr>
+                        <thead>
+                            <th colspan="2">
+                                Buscar usuario
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre:</td>
+                                <td>
+                                    <input type="text" name="" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Correo electrónico: </td>
+                                <td>
+                                    <input type="email" name="" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button class="botoTaronja">Buscar</button>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div>
@@ -99,44 +104,56 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
+                                <td data-label="">
                                     <input type="checkbox" name="" id="">
                                 </td>
-                                <td>
-                                    1
-                                </td>
-                                <td><a href="">Pepe pepito</a></td>
-                                <td>pepito@gmail.com</td>
-                                <td>Administrador</td>
-                                <td>
+                                <td data-label="ID:">1</td>
+                                <td data-label="Nombre:"><a href="">Pepe pepito</a></td>
+                                <td data-label="Correo:">pepito@gmail.com</td>
+                                <td data-label="Rol:">Administrador</td>
+                                <td data-label="Acciones:">
                                     <a href="../modificar/modificarUsuari.html"><i class="fa-regular fa-pen-to-square"></i></a>
                                     <a href=""><i class="fa-regular fa-eye"></i></a>
                                     <a href=""><i class="fa-regular fa-trash-can"></i></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td data-label="">
                                     <input type="checkbox" name="" id="">
                                 </td>
-                                <td>2 </td>
-                                <td><a href="">Pepe pepito</a></td>
-                                <td>pepito@gmail.com</td>
-                                <td>Publicador</td>
-                                <td>
+                                <td data-label="ID:">1</td>
+                                <td data-label="Nombre:"><a href="">Pepe pepito</a></td>
+                                <td data-label="Correo:">pepito@gmail.com</td>
+                                <td data-label="Rol:">Administrador</td>
+                                <td data-label="Acciones:">
                                     <a href="../modificar/modificarUsuari.html"><i class="fa-regular fa-pen-to-square"></i></a>
                                     <a href=""><i class="fa-regular fa-eye"></i></a>
                                     <a href=""><i class="fa-regular fa-trash-can"></i></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td data-label="">
                                     <input type="checkbox" name="" id="">
                                 </td>
-                                <td>3</td>
-                                <td><a href="">Pepe pepito</a></td>
-                                <td>pepito@gmail.com</td>
-                                <td>Publicador</td>
-                                <td>
+                                <td data-label="ID:">1</td>
+                                <td data-label="Nombre:"><a href="">Pepe pepito</a></td>
+                                <td data-label="Correo:">pepito@gmailsdsdsdsd.com</td>
+                                <td data-label="Rol">Administrador</td>
+                                <td data-label="Acciones">
+                                    <a href="../modificar/modificarUsuari.html"><i class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href=""><i class="fa-regular fa-eye"></i></a>
+                                    <a href=""><i class="fa-regular fa-trash-can"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="">
+                                    <input type="checkbox" name="" id="">
+                                </td>
+                                <td data-label="ID:">1</td>
+                                <td data-label="Nombre:"><a href="">Pepe pepito</a></td>
+                                <td data-label="Correo:">pepito@gmasdsdsdsdil.com</td>
+                                <td data-label="Rol:">Administrador</td>
+                                <td data-label="Acciones:">
                                     <a href="../modificar/modificarUsuari.html"><i class="fa-regular fa-pen-to-square"></i></a>
                                     <a href=""><i class="fa-regular fa-eye"></i></a>
                                     <a href=""><i class="fa-regular fa-trash-can"></i></a>

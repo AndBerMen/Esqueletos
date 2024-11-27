@@ -238,12 +238,12 @@ h2 {
     border-collapse: collapse;
     text-align: center;
     width: 100%;
-    border: 0.01px solid black;
+    border: 0.01px solid var(--blauClar);
 }
 
-.taulaGestio, th{
-    border-top: 0.01px solid black;
-    border-bottom: 0.01px solid black;
+.taulaGestio th{
+    border-top: 0.01px solid ;
+    border-bottom: 0.01px solid var(--blauClar);
 
 }
 
@@ -261,8 +261,9 @@ tbody tr:nth-child(even){
     background-color: var(--gris);
 }
 
-td, th {
-    padding: 0.5em 3em 0.5em 3em;
+th, td {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 .veureMes{
@@ -271,7 +272,7 @@ td, th {
 
 .veureMes a{
     text-decoration: none;
-    color: black;
+    color: var(--blauFosc);
 }
 
 .veureMes a:hover{
