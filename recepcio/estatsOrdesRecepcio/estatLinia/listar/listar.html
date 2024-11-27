@@ -36,7 +36,8 @@
                                                 class="fa-solid fa-circle-chevron-right"></i>Usuaris</a></li>
                                     <li><a href="../../../../administracio/rols/llistat/llistatUserProfile.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Rols</a></li>
-                                    <li><a href="../../../../administracio/estatsProvinciesCiutats/state/llistaEstat.html"><i
+                                    <li><a
+                                            href="../../../../administracio/estatsProvinciesCiutats/state/llistaEstat.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Dades geogràfiques</a></li>
                                     <li><a
                                             href="../../../../administracio/transportistes/llistar/llistatTransportistes.html"><i
@@ -57,9 +58,15 @@
                                 <ul class="padding-izq-zero">
                                     <li><a href="../../../../recepcio/proveidors/proveidors.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Proveidors</a></li>
-                                    <li><a href="../../../../recepcio/estatsOrdesRecepcio/estatsOrdesRecepcio.html"><i
-                                                class="fa-solid fa-circle-chevron-right"></i>Estats ordes de
+
+                                    <li><a
+                                            href="../../../../recepcio/estatsOrdesRecepcio/estatLinia/listar/listar.html"><i
+                                                class="fa-solid fa-circle-chevron-right"></i>Estats de Línia d'Ordres
                                             recepció</a></li>
+                                    <li><a
+                                            href="../../../../recepcio/estatsOrdesRecepcio/estatOrdre/listar/listar.html"><i
+                                                class="fa-solid fa-circle-chevron-right"></i>Estats Ordes de
+                                            Recepció</a></li>
                                     <li><a href="../../../../recepcio/productes/productes.html"><i
                                                 class="fa-solid fa-circle-chevron-right"></i>Productes</a></li>
                                     <li><a href="../../../../recepcio/lots/lots.html"><i
@@ -91,26 +98,33 @@
                     <h2>Estat de Línia d'Ordre de Recepció</h2>
                     <div class="container-fluid">
                         <div class="row rowFiltres">
-                            <div class="col-6">
+                            <div class="col-4">
                                 <div class="boxFiltre">
                                     <label for="filter-id">Filtrar per ID:</label>
                                     <input type="text" id="filter-id" placeholder="Introdueix un ID">
                                 </div>
                             </div>
 
-                            <div class="col-6">
+                            <div class="col-4">
                                 <div class="boxFiltre">
                                     <label for="filter-name">Filtrar per Nom:</label>
                                     <input type="text" id="filter-name" placeholder="Introdueix un Nom">
                                 </div>
                             </div>
                         </div>
-
+                        <div class="row rowFiltres">
+                            <div class="col-12">
+                                <div class="container-button-filter">
+                                    <button id="filtre" class="filter-button">Filtrar</button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="boxTaula">
                                     <div class="boxBtn">
-                                        <a href="../alta/alta.html" style="color: white;"><button id="altaLlistat">Nou client</button></a>
+                                        <a href="../alta/alta.html" style="color: white;"><button id="altaLlistat">Nou
+                                                client</button></a>
                                         <label for="accionsLot">Accions en lot</label>
                                         <select name="accionsLot">
                                             <option value="">Selecciona una acció</option>
@@ -130,12 +144,12 @@
                                         </thead>
                                         <tbody id="files">
                                             <tr>
-                                                <td class="checkBoxth">
+                                                <td data-no-colon="true" class="checkBoxth">
                                                     <input type="checkbox">
                                                 </td>
-                                                <td>1</td>
-                                                <td>Pendent</td>
-                                                <td>
+                                                <td data-cell="ID">1</td>
+                                                <td data-cell="Estat">Forzosa</td>
+                                                <td data-no-colon="true">
                                                     <div class="divAccions">
                                                         <a href="../modificar/modificar.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
@@ -150,17 +164,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="checkBoxth">
+                                                <td data-no-colon="true" class="checkBoxth">
                                                     <input type="checkbox">
                                                 </td>
-                                                <td>2</td>
-                                                <td>En procés</td>
-                                                <td>
+                                                <td data-cell="ID">2</td>
+                                                <td data-cell="Estat">Rebutjada</td>
+                                                <td data-no-colon="true">
                                                     <div class="divAccions">
                                                         <a href="../modificar/modificar.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzar.html">
+                                                        <a href="../visualitzar/ver.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -170,17 +184,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="checkBoxth">
+                                                <td data-no-colon="true" class="checkBoxth">
                                                     <input type="checkbox">
                                                 </td>
-                                                <td>3</td>
-                                                <td>Enviado</td>
-                                                <td>
+                                                <td data-cell="ID">3</td>
+                                                <td data-cell="Estat">Completada</td>
+                                                <td data-no-colon="true">
                                                     <div class="divAccions">
                                                         <a href="../modificar/modificar.html">
                                                             <i class="fa-regular fa-pen-to-square"></i>
                                                         </a>
-                                                        <a href="../visualitzar/visualitzar.html">
+                                                        <a href="../visualitzar/ver.html">
                                                             <i class="fa-regular fa-eye"></i>
                                                         </a>
                                                         <a href="">
@@ -189,86 +203,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td class="checkBoxth">
-                                                    <input type="checkbox">
-                                                </td>
-                                                <td>4</td>
-                                                <td>Entregat</td>
-                                                <td>
-                                                    <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </a>
-                                                        <a href="../visualitzar/visualitzar.html">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </a>
-                                                        <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checkBoxth">
-                                                    <input type="checkbox">
-                                                </td>
-                                                <td>5</td>
-                                                <td>Cancelat</td>
-                                                <td>
-                                                    <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </a>
-                                                        <a href="../visualitzar/visualitzar.html">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </a>
-                                                        <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checkBoxth">
-                                                    <input type="checkbox">
-                                                </td>
-                                                <td>6</td>
-                                                <td>Tornat</td>
-                                                <td>
-                                                    <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </a>
-                                                        <a href="../visualitzar/visualitzar.html">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </a>
-                                                        <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="checkBoxth">
-                                                    <input type="checkbox">
-                                                </td>
-                                                <td>7</td>
-                                                <td>Reembolsat</td>
-                                                <td>
-                                                    <div class="divAccions">
-                                                        <a href="../modificar/modificar.html">
-                                                            <i class="fa-regular fa-pen-to-square"></i>
-                                                        </a>
-                                                        <a href="../visualitzar/visualitzar.html">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </a>
-                                                        <a href="">
-                                                            <i class="fa-regular fa-trash-can"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+
 
 
                                         </tbody>
