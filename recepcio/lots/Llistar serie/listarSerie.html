@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
-    <link rel="stylesheet" type="text/css" href="./listarProducto.css">
+    <link rel="stylesheet" type="text/css" href="./listarSerie.css">
     <link rel="shortcut icon" href="../../../img/favicon_2.ico" type="image/x-icon">
     <script src="../../../common/js/common.js"></script>
     <!--<script src="./listarProducto.js"></script>-->
@@ -76,37 +76,42 @@
                                 <div class="boxTaula">
                                     <form class="formulari">
                                         <div class="row">
-                                            <label for="name" class="col-3">Codi del producte:</label>
+                                            <label for="sku" class="col-3 negreta">Codi del producte:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="name" placeholder="SKU54321" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
+                                                <label for="sku">SKU54321</label>
+                                                <!--<input type="text" class="inputVisualitzar" id="sku" placeholder="SKU54321" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>-->
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="address" class="col-3">Nom del producte:</label>
+                                            <label for="name" class="col-3 negreta">Nom del producte:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="Cadira gamer" disabled="true" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <label for="name">Cadira gamer</label>
+                                                <!--<input type="text" class="inputVisualitzar" id="name" placeholder="Cadira gamer" disabled="true" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>-->
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="state_id" class="col-3">Nom del proveïdor:</label>
+                                            <label for="nomProveidor" class="col-3 negreta">Nom del proveïdor:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="Equipamiento Deportivo Vasco S.A." disabled="true" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <label for="nomProveidor">Equipamiento Deportivo Vasco S.A</label>
+                                                <!--<input type="text" class="inputVisualitzar" id="nomProveidor" placeholder="Equipamiento Deportivo Vasco S.A." disabled="true" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>-->
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <label for="nif" class="col-3">Unitats totals:</label>
+                                            <label for="unitatsTotals" class="col-3 negreta">Unitats totals:</label>
                                             <div class="col-9">
-                                                <input type="number" class="inputVisualitzar" disabled="true" id="nif" placeholder="500" pattern="^[a-zA-Z0-9]{1,10}$" required>
+                                                <label for="unitatsTotals">500</label>
+                                                <!--<input type="number" class="inputVisualitzar" disabled="true" id="unitatsTotals" placeholder="500" pattern="^[a-zA-Z0-9]{1,10}$" required>-->
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="date" class="col-3">Unitats en stock:</label>
+                                            <label for="unitatsStock" class="col-3 negreta">Unitats en stock:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" disabled="true" id="production" placeholder="1203" pattern="^\d{9,15}$" required>
+                                                <label for="">1203</label>
+                                                <!--<input type="text" class="inputVisualitzar" disabled="true" id="unitatsStock" placeholder="1203" pattern="^\d{9,15}$" required>-->
                                             </div>
                                         </div>
                                     </form>

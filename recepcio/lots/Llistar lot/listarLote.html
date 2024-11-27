@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../../common/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/grid.css">
     <link rel="stylesheet" type="text/css" href="../../../common/css/common.css">
-    <link rel="stylesheet" type="text/css" href="./listarProducto.css">
+    <link rel="stylesheet" type="text/css" href="./listarLote.css">
     <link rel="shortcut icon" href="../../../img/favicon_2.ico" type="image/x-icon">
     <script src="../../../common/js/common.js"></script>
     <!--<script src="./listarProducto.js"></script>-->
@@ -76,54 +76,62 @@
                                 <div class="boxTaula">
                                     <form class="formulari">
                                         <div class="row">
-                                            <label for="name" class="col-3">Codi del lot:</label>
+                                            <label for="name" class="col-3 negreta">Codi del lot:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="name" placeholder="LOTE-A0001" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>
+                                                <!--<input type="text" class="inputVisualitzar" id="name" placeholder="LOTE-A0001" disabled="true" pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*( [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*" maxlength="60" required>-->
+                                                <label for="">LOTE-A0001</label>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="address" class="col-3">ID del producte:</label>
+                                            <label for="address" class="col-3 negreta">ID del producte:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="101" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <!--<input type="text" class="inputVisualitzar" id="address" placeholder="101" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>-->
+                                                <label for="">101</label>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <label for="address" class="col-3">Nom del proveïdor:</label>
+                                            <label for="address" class="col-3 negreta">Nom del proveïdor:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="Distribuciones Alimentarias del Sur S.A." disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <!--<input type="text" class="inputVisualitzar" id="address" placeholder="Distribuciones Alimentarias del Sur S.A." disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>-->
+                                                <label for="">Distribuciones Alimentarias del Sur S.A.</label>
+
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="address" class="col-3">ID del proveïdor:</label>
+                                            <label for="address" class="col-3 negreta">ID del proveïdor:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="address" placeholder="100000012" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>
+                                                <!--<input type="text" class="inputVisualitzar" id="address" placeholder="100000012" disabled="true"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s,.-]{2,60}" required>-->
+                                                <label for="">100000012</label>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <label for="nif" class="col-3">Unitats totals:</label>
+                                            <label for="nif" class="col-3 negreta">Unitats totals:</label>
                                             <div class="col-9">
-                                                <input type="number" class="inputVisualitzar" id="nif" placeholder="500" disabled="true" pattern="^[a-zA-Z0-9]{1,10}$" required>
+                                                <!--<input type="number" class="inputVisualitzar" placeholder="500" disabled="true" pattern="^[a-zA-Z0-9]{1,10}$" required>-->
+                                                <label for="">500</label>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="date" class="col-3">Data de producció:</label>
+                                            <label for="date" class="col-3 negreta">Data de producció:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="production" placeholder="2024-01-15" disabled="true"  pattern="^\d{9,15}$" required>
+                                                <!--<input type="text" class="inputVisualitzar" id="production" placeholder="2024-01-15" disabled="true"  pattern="^\d{9,15}$" required>-->
+                                                <label for="">2024-01-15</label>
                                             </div>
                                         </div>
                             
                                         <div class="row">
-                                            <label for="email" class="col-3">Data d'expiració:</label>
+                                            <label for="date" class="col-3 negreta">Data d'expiració:</label>
                                             <div class="col-9">
-                                                <input type="text" class="inputVisualitzar" id="expire" placeholder="2024-07-15" disabled="true"  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                                                <!--<input type="text" class="inputVisualitzar" id="expire" placeholder="2024-07-15" disabled="true"  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>-->
+                                                <label for="">2024-01-15</label>
                                             </div>
                                         </div>
-                                    </form>
+                                    </form> 
                                     <a href="../lots.html">Tornar</a>
                                 </div>
                             </div>
