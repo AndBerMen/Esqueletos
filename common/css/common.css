@@ -46,8 +46,8 @@ button{
 .botoTaronja {
     color: white;
     background-color: var(--taronja);
-    border: 2px solid black;
-    box-shadow: 2px 2px black;
+    border: 2px solid var(--blauFosc);
+    box-shadow: 2px 2px var(--blauFosc);
     font-weight: 700;
     padding: 0.43em 0.7em;
 }
@@ -199,7 +199,7 @@ h2 {
 }
 
 .filter-button:hover{
-    color: var(--negre);
+    color: var(--blauFosc);
 }
 
 /*BOX TAULA*/
@@ -225,7 +225,7 @@ h2 {
 }
 
 .boxBtn button:hover{
-    color: var(--negre);
+    color: var(--blauFosc);
 }
   
 .boxBtn label {
