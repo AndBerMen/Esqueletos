@@ -46,8 +46,8 @@ button{
 .botoTaronja {
     color: white;
     background-color: var(--taronja);
-    border: 2px solid black;
-    box-shadow: 2px 2px black;
+    border: 2px solid var(--blauFosc);
+    box-shadow: 2px 2px var(--blauFosc);
     font-weight: 700;
     padding: 0.43em 0.7em;
 }
@@ -121,7 +121,7 @@ nav i{
 #sesion,
 #sesion i {
     margin-top: 0.1em;
-    background-color: #ececec;
+    background-color: var(--gris);
     color: var(--blauFosc);
 }
 
@@ -199,7 +199,7 @@ h2 {
 }
 
 .filter-button:hover{
-    color: var(--negre);
+    color: var(--blauFosc);
 }
 
 /*BOX TAULA*/
@@ -225,7 +225,7 @@ h2 {
 }
 
 .boxBtn button:hover{
-    color: var(--negre);
+    color: var(--blauFosc);
 }
   
 .boxBtn label {
@@ -399,8 +399,8 @@ td, th {
     }
 
     #sesion{
-        background-color: #ececec;
-        border: 1px solid #ececec;
+        background-color: var(--gris);
+        border: 1px solid var(--gris);
     }
 
     #dropdown{
