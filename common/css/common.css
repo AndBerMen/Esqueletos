@@ -121,7 +121,7 @@ nav i{
 #sesion,
 #sesion i {
     margin-top: 0.1em;
-    background-color: #ececec;
+    background-color: var(--gris);
     color: var(--blauFosc);
 }
 
@@ -324,12 +324,15 @@ td, th {
     width: 100%;
 }
 
+/* BOTO TORNAR HECHO POR EL JAVMAN MAGNIFICO */
+
 .botoTornar{
     background-color: var(--blauClar);
     padding: 0.4em 0.8em 0.4em 0.8em;
     border-radius: 0.3em;
     border: 0em;
     color: white;
+    text-decoration: none;
 }
 
 /*MEDIAQUERY*/
@@ -396,8 +399,8 @@ td, th {
     }
 
     #sesion{
-        background-color: #ececec;
-        border: 1px solid #ececec;
+        background-color: var(--gris);
+        border: 1px solid var(--gris);
     }
 
     #dropdown{
